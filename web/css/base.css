@@ -1,0 +1,64 @@
+*{ margin: 0; padding: 0; } /*enlève les valeurs par défauts*/
+
+body{ font-family: Arial, sans-serif; font-size: 15px; }
+
+h1,h2,h3,h4{ color: #444; }
+
+h1{ font-family: 'Crete Round', sans-serif; font-size: 45px; }
+
+h2{ font-size: 55px; }
+
+h3{ font-size: 30px; }
+
+h4{ font-size: 24px; }
+
+p{ line-height: 20px; color: #777; }
+
+ul{ list-style: none; }
+
+a{ text-decoration: none; color: #444; }
+
+small{ font-size: 13px; font-style: italic;}
+
+.footer{ width: 950px; margin:0 auto; padding: 0 10px; }
+
+.orange{ color: #ff7A00; }
+
+.clear{ clear: both; }
+
+/*-----Menu navigation-----*/
+.navbar h1{ float: left; margin-top: 32px; }
+
+.collapse ul{ float: right; margin-top: 50px; }
+
+.collapse ul li{ display:inline-block ;}
+
+.collapse ul li a { text-transform: uppercase; font-weight: bold; margin-right: 20px;}
+
+.collapse ul li a:hover { border-bottom: 2px solid black; }
+
+.navbar .navbar-nav{ display: inline-block;}
+
+.navbar .navbar-collapse{ text-align: center; }
+
+
+/*-----Footer-----*/
+footer{ height: 200px; background-color: #444; }
+
+footer h1{ color: white; text-align: center; padding-top: 50px; }
+
+.copyright{ text-align: center; font-weight: bold; padding-top: 30px; color: #777; }
+
+
+/*-----Media Queries-----*/
+@media(max-width:990px) {
+    .navbar-collapse h1{font-size: 1.2em; text-align: center; display: inline; margin-top: 10px;}
+    .collapse ul{ float: right;  margin-top: 0px;}
+    .collapse ul li{ display: block; text-align: center;}
+    .collapse ul li a { text-transform: none; font-weight: normal; margin-right: 0px;}
+}
+
+@media(max-width:767px) {
+    .collapse ul{ float: none;}
+    .navbar-collapse h1{display: none;}
+}
