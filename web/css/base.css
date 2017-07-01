@@ -20,8 +20,6 @@ a{ text-decoration: none; color: #444; }
 
 small{ font-size: 13px; font-style: italic;}
 
-.footer{ width: 950px; margin:0 auto; padding: 0 10px; }
-
 .orange{ color: #ff7A00; }
 
 .clear{ clear: both; }
@@ -43,11 +41,17 @@ small{ font-size: 13px; font-style: italic;}
 
 
 /*-----Footer-----*/
-footer{ height: 200px; background-color: #444; }
+footer{ height: 200px; background-color: #444;}
 
-footer h1{ color: white; text-align: center; padding-top: 50px; }
+footer h1{ color: white;  padding-top: 30px;  }
 
-.copyright{ text-align: center; font-weight: bold; padding-top: 30px; color: #777; }
+.copyright{ font-weight: bold; padding-top: 20px; color: #777; }
+
+#lienFooter{ color: white; }
+
+#lienFooter a { color: white;}
+
+#lienFooter a:hover { color: #ff7A00;}
 
 
 /*-----Media Queries-----*/
@@ -61,4 +65,5 @@ footer h1{ color: white; text-align: center; padding-top: 50px; }
 @media(max-width:767px) {
     .collapse ul{ float: none;}
     .navbar-collapse h1{display: none;}
+    .copyright{ font-size: 0.7em; }
 }
