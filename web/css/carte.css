@@ -1,0 +1,33 @@
+body{ background-image: url("../images/fond_carte.jpg"); background-repeat: no-repeat; }
+
+h4{margin-top: 112px; margin-bottom: 50px; text-align: center;}
+
+.container h4{  margin-bottom: 35px; }
+
+.map{overflow: hidden; height: 800px;}
+
+.map__image{ width: 50%; float: left; border-radius: 10px; }
+
+.map__image path { fill: #888; stroke: #FFF; stroke-width: 1px; transition: fill 0.3s }
+
+.map__image .is-active path { fill: #e47b19;}
+
+.map__list { float: right; width: 50%; padding-left: 25px; }
+
+.map__list a { color: white; text-decoration: none; transition: color 0.3s; font-size: 15px; }
+
+.map__list a.is-active{ color:#e47b19; font-weight: bold; text-decoration: underline; }
+
+.ecart{width:30%; font-size: 5px;}
+
+
+
+@media(max-width:1024px) {
+    .map__image{ width: 100%; float: left; border-radius: 10px; margin-left: 3%;}
+    .map__list{display: none;}
+}
+
+@media(max-width:500px) {
+    .map__image{ width: 20%;}
+    .map__list{display: inline-block; margin-left: -50px;}
+}
