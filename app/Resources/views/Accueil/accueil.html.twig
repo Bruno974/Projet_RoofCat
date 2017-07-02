@@ -46,15 +46,37 @@
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
                     <div class="annonce-block">
-                        <article class="annonceActive">
+                        <article class="annonces">
                             <div class="overlay">
-                               {# <h4>{{ annonceDerniere.categorie.nom }}</h4><h6>{{ annonceDerniere.departement.departementNom }}</h6>
+                                <h4>{{ annonceDerniere.categorie.nom }}</h4><h6>{{ annonceDerniere.departement.departementNom }}</h6>
                                 <p><small>{{ annonceDerniere.description }} {{ annonceDerniere.signes }}</small></p>
-                                <a href="#" class="button-2">Plus d'infos</a>#}
+                                <a href="#" class="button-2">Plus d'infos</a>
                             </div>
                         </article>
                     </div>
                 </div>
+
+                {% for annonce in annoncesRecentes %}
+                    <div class="item">
+                        <div class="annonce-block">
+                            <article class="annonces">
+                                <div class="overlay">
+                                    <h4>{{ annonce.categorie.nom }}</h4><h6>{{ annonce.departement.departementNom }}</h6>
+                                    <p><small>{{ annonce.description }} {{ annonce.signes }}</small></p>
+                                    <a href="#" class="button-2">Plus d'infos</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                {% endfor %}
+
+            </div>
+            <a href="#myCarousel" class="left carousel-control" data-slide="prev" role="button">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a href="#myCarousel" class="right carousel-control" data-slide="next" role="button">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
             </div>
 
         </div>
