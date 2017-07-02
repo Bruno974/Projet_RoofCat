@@ -91,6 +91,24 @@ class Annonce
      */
     private $mobile;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Race", cascade={"persist"})
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $race;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Departement", cascade={"persist"})
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $departement;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Categorie", cascade={"persist"})
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $categorie;
+
 
     /**
      * Get id
@@ -341,5 +359,76 @@ class Annonce
     {
         return $this->mobile;
     }
-}
 
+    /**
+     * Set race
+     *
+     * @param \AppBundle\Entity\Race $race
+     *
+     * @return Annonce
+     */
+    public function setRace(\AppBundle\Entity\Race $race)
+    {
+        $this->race = $race;
+
+        return $this;
+    }
+
+    /**
+     * Get race
+     *
+     * @return \AppBundle\Entity\Race
+     */
+    public function getRace()
+    {
+        return $this->race;
+    }
+
+    /**
+     * Set departement
+     *
+     * @param \AppBundle\Entity\Departement $departement
+     *
+     * @return Annonce
+     */
+    public function setDepartement(\AppBundle\Entity\Departement $departement)
+    {
+        $this->departement = $departement;
+
+        return $this;
+    }
+
+    /**
+     * Get departement
+     *
+     * @return \AppBundle\Entity\Departement
+     */
+    public function getDepartement()
+    {
+        return $this->departement;
+    }
+
+    /**
+     * Set categorie
+     *
+     * @param \AppBundle\Entity\Categorie $categorie
+     *
+     * @return Annonce
+     */
+    public function setCategorie(\AppBundle\Entity\Categorie $categorie)
+    {
+        $this->categorie = $categorie;
+
+        return $this;
+    }
+
+    /**
+     * Get categorie
+     *
+     * @return \AppBundle\Entity\Categorie
+     */
+    public function getCategorie()
+    {
+        return $this->categorie;
+    }
+}
