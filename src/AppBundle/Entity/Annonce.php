@@ -109,6 +109,13 @@ class Annonce
      */
     private $categorie;
 
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="image_url", type="text")
+     */
+    private $imageUrl;
+
 
     /**
      * Get id
@@ -430,5 +437,29 @@ class Annonce
     public function getCategorie()
     {
         return $this->categorie;
+    }
+
+    /**
+     * Set imageUrl
+     *
+     * @param string $imageUrl
+     *
+     * @return Annonce
+     */
+    public function setImageUrl($imageUrl)
+    {
+        $this->imageUrl = $imageUrl;
+
+        return $this;
+    }
+
+    /**
+     * Get imageUrl
+     *
+     * @return string
+     */
+    public function getImageUrl()
+    {
+        return $this->imageUrl;
     }
 }
