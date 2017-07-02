@@ -19,8 +19,8 @@ class HomeController extends Controller
      */
     public function indexAction()
     {
-        /*$annonceDerniere = $this->getDoctrine()->getManager()->getRepository('AppBundle:Annonce')->findDerniereAnnonce();
-        $annoncesRecentes = $this->getDoctrine()->getManager()->getRepository('AppBundle:Annonce')->findAnnoncesRecentes();*/
-        return $this->render('Accueil/accueil.html.twig');//, array('annoncesRecentes' => $annoncesRecentes, 'annonceDerniere' => $annonceDerniere));
+        $derniereAnnonce = $this->getDoctrine()->getManager()->getRepository('AppBundle:Annonce')->findDerniereAnnonce();
+        $annoncesRecentes = $this->getDoctrine()->getManager()->getRepository('AppBundle:Annonce')->findAnnoncesRecentes();
+        return $this->render('Accueil/accueil.html.twig', array('annoncesRecentes' => $annoncesRecentes, 'annonceDerniere' => $derniereAnnonce));
     }
 }

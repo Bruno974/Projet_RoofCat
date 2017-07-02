@@ -26,6 +26,10 @@
 #action-3{ background: url("../images/annonce-accueil.png") no-repeat top center;}
 
 
+/*-----ANNONCE RECENTE-----*/
+#annoncesRecentes{ /*background-color: #efefef;*/ background-image: url("../images/fond_palissade.jpg"); background-repeat: no-repeat;  background-size: cover; padding: 160px 0;}
+
+
 
 /*-----Media Queries-----*/
 @media(max-width:990px) {

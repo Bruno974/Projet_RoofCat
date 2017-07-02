@@ -35,4 +35,29 @@
             </ul>
     </section>
 
+    <section id="annoncesRecentes" class="container-fluid">
+        <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="annonce-block">
+                        <article class="annonceActive">
+                            <div class="overlay">
+                               {# <h4>{{ annonceDerniere.categorie.nom }}</h4><h6>{{ annonceDerniere.departement.departementNom }}</h6>
+                                <p><small>{{ annonceDerniere.description }} {{ annonceDerniere.signes }}</small></p>
+                                <a href="#" class="button-2">Plus d'infos</a>#}
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
 {% endblock %}
