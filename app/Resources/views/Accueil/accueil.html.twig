@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/accueil.css') }}" xmlns="http://www.w3.org/1999/html">
+{% endblock %}
+
+{% block body %}
+
+    <section id="main-image">
+        <h2>Aidez les<br><strong id="strong">à retrouver leur toit</strong></h2>
+        <a href="#actions" class="button-1">Par ici</a>
+    </section>
+
+    <section id="actions" class="container">
+            <ul class="col-md-12">
+                <a href="" class="col-md-4">
+                    <li id="action-1">
+                        <h4>Chercher</h4>
+                        <p>Vous avez perdu votre chat, il est parti...Postez une annonce pour que la communauté vous aide.</p>
+                    </li>
+                </a>
+                <a href="" class="col-md-4">
+                    <li id="action-2">
+                        <h4>Trouver</h4>
+                        <p>Vous avez trouvé un chat, aidez le à retrouver ses maîtres en postant une annonce.</p>
+                    </li>
+                </a>
+                <a href="" class="col-md-4">
+                    <li id="action-3">
+                        <h4>Poster</h4>
+                        <p>Poster votre annonce gratuitement.</p>
+                    </li>
+                </a>
+                <div class="clear"></div>
+            </ul>
+    </section>
+
+{% endblock %}

@@ -1,0 +1,41 @@
+/*-----MAIN IMAGE-----*/
+#main-image{ height: 680px; background: url("../images/accueil-cat.jpg") center; background-size: cover; }
+
+#main-image h2{ font-weight: normal; text-transform: uppercase; text-align: center; padding: 260px 0 40px 0;
+    margin-bottom: 20px; color: white; }
+
+.button-1{ display: block; width: 120px; height: 50px; background: #ff7A00; color: white; font-size: 20px;
+    margin: 0 auto; line-height: 50px; text-align: center; border-radius: 3px; }
+
+.button-1:hover{ background: #999; text-decoration: none; }
+
+
+/*-----ACTIONS-----*/
+#actions ul a { padding-top: 80px; padding-bottom: 20px; }
+
+#actions ul li{  padding-top: 120px; text-align: center; margin-right: 10px; }
+
+#actions h4{ text-transform: uppercase; margin-bottom: 20px; }
+
+#actions p{ margin-bottom: 20px; }
+
+#action-1{ background: url("../images/search-accueil.png") no-repeat top center;}
+
+#action-2{ background: url("../images/find-accueil.png") no-repeat top center;}
+
+#action-3{ background: url("../images/annonce-accueil.png") no-repeat top center;}
+
+
+
+/*-----Media Queries-----*/
+@media(max-width:990px) {
+
+}
+
+@media(max-width:767px) {
+    #main-image h2{ font-size: 40px;  padding: 130px 0 40px 0;}
+}
+
+@media(max-width:500px) {
+    #main-image h2{ font-size: 30px;  padding: 200px 0 40px 0;}
+}
