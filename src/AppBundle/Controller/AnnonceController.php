@@ -34,7 +34,7 @@ class AnnonceController extends Controller
 
         if ($page > $nbPages)
         {
-            throw $this->createNotFoundException("La page " . $page . " n'existe pas.");
+            return $this->render('Annonce/test.html.twig');
         }
 
         return $this->render('Annonce/annonce.html.twig', array('annonces' => $annonces,  'nbPages' => $nbPages,

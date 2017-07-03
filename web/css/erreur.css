@@ -1,0 +1,7 @@
+.fond{margin-top: 6.5%;}
+
+
+/*-----Media Queries-----*/
+@media(max-width:1024px) {
+    .fond{margin-top: 12%;}
+}
