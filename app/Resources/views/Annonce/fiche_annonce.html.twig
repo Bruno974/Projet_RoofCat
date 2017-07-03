@@ -1,0 +1,28 @@
+<div class="container">
+    <div class=" row well">
+        <h4 class="text-center "> {{ annonce.date|date('d-m-Y') }}</h4>
+        <div class="col-lg-5">
+            <p><small> {{ annonce.departement.departementNom }}</small></p>
+            <img src="{{ asset(annonce.imageUrl)}}" alt="{{annonce.description}}" class="img-responsive img-thumbnail">
+            <p class="text-center annonce"><strong>ANNONCE:</strong><small> {{ annonce.id }}</small></p>
+        </div>
+        <div class="col-lg-7 well">
+            <legend>Chat:</legend>
+            <p><strong>Description:</strong><small> {{ annonce.description }}</small></p>
+            <p><strong>sexe:</strong><small> {{ annonce.sexe }}</small></p>
+            <p><strong>race:</strong><small> {{ annonce.race.nom }}</small></p>
+            <p><strong>AGE:</strong><small> {{ annonce.age }}</small></p>
+            <p><strong>IDENTIFICATION:</strong><small> non</small></p>
+            <p><strong>STERILISATION:</strong><small> {{ annonce.sterilisation }}</small></p>
+
+            <legend>Détails:</legend>
+            <p><strong>SIGNES:</strong><small> {{ annonce.signes }}</small></p>
+            <p><strong>CIRCONSTANCES:</strong><small> {{ annonce.circonstances }}</small></p>
+
+            <legend>Contact:</legend>
+            <p><strong>E-MAIL:</strong><small> {{ annonce.mail }}</small></p>
+            <p><strong>MOBILE:</strong><small> {{ annonce.mobile }}</small></p>
+        </div>
+    </div>
+    <hr>
+</div>

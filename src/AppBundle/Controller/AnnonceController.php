@@ -14,12 +14,31 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
 class AnnonceController extends Controller
 {
+    const NBRE_PAR_PAGE = 1;
+
     /**
      * @Route("/annonces_trouvees/{departement}/{page}", name="annonceTrouve", defaults={"page" = 1})
      */
     public function trouveAction($departement,$page)
     {
-        return $this->render('Annonce/annonce.html.twig');
+        $categorie = 1;
+
+        if ($page < 1)
+        {
+            throw $this->createNotFoundException("La page " . $page . " n'existe pas.");
+        }
+
+        $annonces = $this->getDoctrine()->getManager()->getRepository('AppBundle:Annonce')->findAllTouverParDepartement($departement, $page, self::NBRE_PAR_PAGE);
+
+        $nbPages = ceil(count($annonces) / self::NBRE_PAR_PAGE);
+
+        if ($page > $nbPages)
+        {
+            throw $this->createNotFoundException("La page " . $page . " n'existe pas.");
+        }
+
+        return $this->render('Annonce/annonce.html.twig', array('annonces' => $annonces,  'nbPages' => $nbPages,
+            'page' => $page, 'departement' => $departement, 'categorie' => $categorie ));
     }
 
     /**

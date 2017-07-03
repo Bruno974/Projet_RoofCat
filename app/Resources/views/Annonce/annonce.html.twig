@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+   {# <link rel="stylesheet" href="{{ asset('css/fiche.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/annonce.css') }}">#}
+{% endblock %}
+
+{% block body %}
+    {# <div class="container_fluid">
+         <form action="#" class="form-horizontal form-control">
+             <div class="form-group">
+                 <label for="region">Region</label>
+                 <input type="text" name="region">
+                 <label for="race">Race</label>
+                 <input type="text" name="race">
+             </div>
+         </form>
+     </div>#}
+    <div class="decalage"></div>
+    {% for annonce in annonces %}
+        {% if annonce is defined %}
+            {% include ("Annonce/fiche_annonce.html.twig") %}
+        {% else %}
+            <p>pas d'annonce</p>
+        {% endif %}
+    {% endfor %}
+
+    {% if categorie == 1 %}
+        <ul class="pager">
+
+            {% for p in range(1, nbPages) %}
+                <li{% if p == page %} class="active"{% endif %}>
+                    <a href="{{ path('annonceTrouve', {'departement': departement,'page': p}) }}">{{ p }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <ul class="pager">
+
+            {% for p in range(1, nbPages) %}
+                <li{% if p == page %} class="active"{% endif %}>
+                    <a href="{{ path('annoncePerdu', {'departement': departement,'page': p}) }}">{{ p }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+{% endblock %}
