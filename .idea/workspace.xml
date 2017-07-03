@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae8a95f7-6127-431a-93ca-1fb08bba4298" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/annonce.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/fiche.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/Annonce/annonce.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/Annonce/annonce.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/AnnonceController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/AnnonceController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Repository/AnnonceRepository.php" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/AnnonceRepository.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,8 +18,8 @@
       <file leaf-file-name="AnnonceController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/AnnonceController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="50" column="1" lean-forward="false" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+            <state relative-caret-position="419">
+              <caret line="44" column="99" lean-forward="false" selection-start-line="44" selection-start-column="99" selection-end-line="44" selection-end-column="99" />
               <folding />
             </state>
           </provider>
@@ -49,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AnnonceRepository.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AnnonceRepository.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/AnnonceRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+            <state relative-caret-position="861">
+              <caret line="52" column="5" lean-forward="false" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -99,7 +97,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fiche_annonce.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="fiche_annonce.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/Annonce/fiche_annonce.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
@@ -161,12 +159,12 @@
         <option value="$PROJECT_DIR$/app/Resources/views/Annonce/chercher.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/Carte/carteChercher.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/AnnonceController.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Repository/AnnonceRepository.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/Annonce/fiche_annonce.html.twig" />
         <option value="$PROJECT_DIR$/web/css/annonce.css" />
         <option value="$PROJECT_DIR$/web/css/fiche.css" />
         <option value="$PROJECT_DIR$/app/Resources/views/Annonce/annonce.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/AnnonceController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Repository/AnnonceRepository.php" />
       </list>
     </option>
   </component>
@@ -553,12 +551,12 @@
       <option name="presentableId" value="Default" />
       <updated>1498903843557</updated>
       <workItem from="1498903845267" duration="18267000" />
-      <workItem from="1498991792876" duration="21728000" />
+      <workItem from="1498991792876" duration="22548000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39995000" />
+    <option name="totallyTimeSpent" value="40815000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -799,14 +797,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/AnnonceRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/css/annonce.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -841,10 +831,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Annonce/fiche_annonce.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="64" lean-forward="false" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/AnnonceController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="50" column="1" lean-forward="false" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+        <state relative-caret-position="419">
+          <caret line="44" column="99" lean-forward="false" selection-start-line="44" selection-start-column="99" selection-end-line="44" selection-end-column="99" />
           <folding />
         </state>
       </provider>
@@ -857,10 +855,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/Annonce/fiche_annonce.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/AnnonceRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="64" lean-forward="false" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
+        <state relative-caret-position="861">
+          <caret line="52" column="5" lean-forward="false" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
           <folding />
         </state>
       </provider>

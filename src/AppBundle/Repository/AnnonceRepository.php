@@ -38,4 +38,17 @@ class AnnonceRepository extends \Doctrine\ORM\EntityRepository
 
         return new Paginator($query, true);
     }
+
+    public function findAllPerduParDepartement($idDepartement, $page, $nbreParPage)
+    {
+        $query = $this->createQueryBuilder('a')
+            ->where('a.departement = :idDepartement')
+            ->setParameter('idDepartement', $idDepartement)
+            ->andWhere('a.categorie = 2 ')
+            ->getQuery()
+            ->setFirstResult(($page-1) * $nbreParPage) //On définit l'article à partir duquel commencer la liste
+            ->setMaxResults($nbreParPage); //Le nombre d'épisode à afficher sur une page
+
+        return new Paginator($query, true);
+    }
 }

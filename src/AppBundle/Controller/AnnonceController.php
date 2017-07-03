@@ -46,6 +46,23 @@ class AnnonceController extends Controller
      */
     public function perduAction($departement,$page)
     {
-        return $this->render('Annonce/annonce.html.twig');
+        $categorie = 2;
+
+        if ($page < 1)
+        {
+            throw $this->createNotFoundException("La page " . $page . " n'existe pas.");
+        }
+
+        $annonces = $this->getDoctrine()->getManager()->getRepository('AppBundle:Annonce')->findAllPerduParDepartement($departement, $page, self::NBRE_PAR_PAGE);
+
+        $nbPages = ceil(count($annonces) / self::NBRE_PAR_PAGE);
+
+        if ($page > $nbPages)
+        {
+            throw $this->createNotFoundException("La page " . $page . " n'existe pas.");
+        }
+
+        return $this->render('Annonce/annonce.html.twig', array('annonces' => $annonces, 'nbPages' => $nbPages,
+            'page' => $page, 'departement' => $departement, 'categorie' => $categorie ));
     }
 }
