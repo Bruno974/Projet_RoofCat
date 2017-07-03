@@ -16,4 +16,12 @@ class CarteController extends Controller
         return $this->render('Annonce/trouver.html.twig');
     }
 
+    /**
+     * @Route("/carte_chercher", name="carteChercher")
+     */
+    public function chercherCarteAction()
+    {
+        return $this->render('Annonce/chercher.html.twig');
+    }
+
 }

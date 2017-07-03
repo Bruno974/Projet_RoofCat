@@ -21,4 +21,12 @@ class AnnonceController extends Controller
     {
         return $this->render('Annonce/annonce.html.twig');
     }
+
+    /**
+     * @Route("/annonces_perdues/{departement}/{page}", name="annoncePerdu", defaults={"page" = 1})
+     */
+    public function perduAction($departement,$page)
+    {
+        return $this->render('Annonce/annonce.html.twig');
+    }
 }
