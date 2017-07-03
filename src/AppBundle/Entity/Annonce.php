@@ -116,6 +116,11 @@ class Annonce
      */
     private $imageUrl;
 
+    public function __construct()
+    {
+        $this->setDate(new \DateTime());
+    }
+
 
     /**
      * Get id

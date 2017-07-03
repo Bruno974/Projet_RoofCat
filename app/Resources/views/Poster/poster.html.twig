@@ -1,0 +1,104 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/poster.css') }}">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+{% endblock %}
+
+{% block body %}
+
+    <section class="container">
+        <h2>Postez votre annonce:</h2>
+    </section>
+
+    <section class="container-fluid">
+        <div class="row">
+            {{ form_start(form) }}
+            {{ form_errors(form) }}
+            <article class="col-md-3 well gauche">
+                <legend>Chat:</legend>
+                <div class="form-group">
+                    <label for="nom">Description:</label>
+                    {{ form_widget(form.description, {'attr': {'class': 'form-control', 'placeholder': 'Description'}})}}
+                    {{ form_errors(form.description) }}
+                </div>
+                <div class="form-group">
+                    <label for="picture">Image</label>
+                    {{ form_widget(form.imageUrl)}}
+                    {{ form_errors(form.imageUrl)}}
+                </div>
+                <div class="form-group">
+                    <label for="nom">Sexe:</label>
+                    {{ form_widget(form.sexe, {'attr': {'class': 'form-control', 'placeholder': 'Sexe'}})}}
+                    {{ form_errors(form.sexe) }}
+                </div>
+                <div class="form-group">
+                    <label for="nom">Age:</label>
+                    {{ form_widget(form.age, {'attr': {'class': 'form-control', 'placeholder': '1ans ou 10mois'}})}}
+                    {{ form_errors(form.age) }}
+                </div>
+                <div class="form-group">
+                    <label for="nom">Race:</label>
+                    {{ form_widget(form.race, {'attr': {'class': 'form-control', 'placeholder': 'Race', 'cols': '30', 'rows':'10'}})}}
+                    {{ form_errors(form.race) }}
+                </div>
+                <div class="form-group">
+                    <label for="nom">Identification:</label>
+                    {{ form_widget(form.identification, {'attr': {'class': 'form-control', 'placeholder': '250269811205512', 'cols': '30', 'rows':'10'}})}}
+                    {{ form_errors(form.identification) }}
+                </div>
+
+                <div class="form-group">
+                    <label for="nom">Stérilisation:</label>
+                    {{ form_widget(form.sterilisation, {'attr': {'class': 'form-control', 'placeholder': 'Stérilisation', 'cols': '30', 'rows':'10'}})}}
+                    {{ form_errors(form.sterilisation) }}
+                </div>
+            </article>
+            <article class="col-md-3 col-md-offset-1 well">
+                <legend>Détails:</legend>
+                <div class="form-group">
+                    <label for="nom">Signes:</label>
+                    {{ form_widget(form.signes, {'attr': {'class': 'form-control', 'placeholder': 'Signes', 'cols': '30', 'rows':'10'}})}}
+                    {{ form_errors(form.signes) }}
+                </div>
+                <div class="form-group">
+                    <label for="nom">Circonstances:</label>
+                    {{ form_widget(form.circonstances, {'attr': {'class': 'form-control', 'placeholder': 'Circonstances', 'cols': '30', 'rows':'10'}})}}
+                    {{ form_errors(form.circonstances) }}
+                </div>
+            </article>
+            <article class="col-md-3 col-md-offset-1 well">
+                <legend>Pour vous joindre:</legend>
+                <div class="form-group">
+                    <label for="nom">Email:</label>
+                    {{ form_widget(form.mail, {'attr': {'class': 'form-control', 'placeholder': 'Email', 'cols': '30', 'rows':'10'}})}}
+                    {{ form_errors(form.mail) }}
+                </div>
+                <div class="form-group">
+                    <label for="nom">Mobile:</label>
+                    {{ form_widget(form.mobile, {'attr': {'class': 'form-control', 'placeholder': 'Mobile', 'cols': '30', 'rows':'10'}})}}
+                    {{ form_errors(form.mobile) }}
+                </div>
+                <div class="form-group">
+                    <label for="nom">Département:</label>
+                    {{ form_widget(form.departement, {'attr': {'class': 'form-control', 'placeholder': 'Département', 'cols': '30', 'rows':'10'}})}}
+                    {{ form_errors(form.departement) }}
+                </div>
+
+                <div class="form-group">
+                    <label for="nom">Categorie:</label>
+                    {{ form_widget(form.categorie, {'attr': {'class': 'form-control', 'placeholder': 'Catégorie', 'cols': '30', 'rows':'10'}})}}
+                    {{ form_errors(form.categorie) }}
+                </div>
+                <div class="g-recaptcha" data-sitekey="6Ld8nR8UAAAAAIYdiriuzmfxHREYMBnS1pqRr_QP"></div>
+            </article>
+        </div>
+        <div class="container">
+            <div class="form-group">
+                {{ form_widget(form.Envoyer, {'attr': {'class': 'btn btn-warning form-control'}})}}
+            </div>
+            {{ form_rest(form) }}
+            {{ form_end(form) }}
+        </div>
+    </section>
+{% endblock %}
