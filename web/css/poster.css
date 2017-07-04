@@ -2,7 +2,7 @@
 
 legend{ color: orange; text-shadow: black 0.05em 0.05em; font-weight: bold; }
 
-.well { background-color: rgba(255, 255, 255, 0.4);  padding-bottom: 50px; }
+.well { background-color: rgba(255, 255, 255, 0.6);  padding-bottom: 50px; }
 
 body{ background-image: url("../images/fond_poster.jpg");  background-repeat: no-repeat;}
 
@@ -28,13 +28,6 @@ strong{color: red; font-size: 1.3em;}
         transform-origin: 0 0;
     }}
 
-/* Background */
-/*body {
-    width: auto;
-    height: auto;
-    background: url("../images/cat-071.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}*/
+
 
 

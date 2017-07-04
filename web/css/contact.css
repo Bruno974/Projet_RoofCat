@@ -1,0 +1,30 @@
+body { width: auto; height: auto; background: url("../images/fond_contact.jpg"); background-size: cover; background-repeat: no-repeat; }
+
+.container{ margin-top: 110px; }
+
+.container h1{ color: darkorange; font-size: 2.6em; font-weight: bold; text-shadow: 0.05em 0.05em rgba(0,0,0, 0.7); }
+
+h2{ color: white; text-shadow: 0.05em 0.05em rgba(63,107,169, 0.7); font-size: 1.5em; }
+
+legend{ color: orange; text-shadow: black 0.05em 0.05em; font-weight: bold;  }
+
+.well { background-color: rgba(255, 255, 255, 0.6);  padding-bottom: 50px; }
+
+
+/*-----Media Queries-----*/
+@media(max-width:990px) {
+    .container{ margin-top: 50px; }
+}
+
+@media(max-width:400px) {
+    #rc-imageselect, .g-recaptcha {
+        transform: scale(0.65);
+        transform-origin: 0;
+        transform: scale(0.65);
+        transform-origin: 0 0;
+        -webkit-transform: scale(0.65);
+        transform: scale(0.65);
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+    }
+}
