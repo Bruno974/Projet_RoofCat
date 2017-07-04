@@ -3,6 +3,9 @@
 namespace AppBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\EmailType;
+use Symfony\Component\Form\Extension\Core\Type\IntegerType;
+use Symfony\Component\Form\Extension\Core\Type\NumberType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
@@ -31,14 +34,14 @@ class AnnonceType extends AbstractType
             ->add('age', TextType::class)
             ->add('signes', TextareaType::class)
             ->add('circonstances', TextareaType::class)
-            ->add('identification', TextType::class)
+            ->add('identification', NumberType::class, array( 'required' => false))
             ->add('sterilisation',  ChoiceType::class, array(
                 'choices'  => array(
                     'Oui' => 'oui',
                     'Non' => 'non',
                 )))
-            ->add('mail', TextType::class)
-            ->add('mobile', TextType::class)
+            ->add('mail', EmailType::class)
+            ->add('mobile', NumberType::class)
             ->add('race', EntityType::class, array(
                 'class'        => 'AppBundle:Race',
                 'choice_label' => 'nom',

@@ -18,8 +18,8 @@
             <article class="col-md-3 well gauche">
                 <legend>Chat:</legend>
                 <div class="form-group">
-                    <label for="nom">Description:</label>
-                    {{ form_widget(form.description, {'attr': {'class': 'form-control', 'placeholder': 'Description'}})}}
+                    <label for="nom">Description:<strong>*</strong></label>
+                    {{ form_widget(form.description, {'attr': {'class': 'form-control', 'placeholder': 'Minimum 3 caractères'}})}}
                     {{ form_errors(form.description) }}
                 </div>
                 <div class="form-group">
@@ -33,7 +33,7 @@
                     {{ form_errors(form.sexe) }}
                 </div>
                 <div class="form-group">
-                    <label for="nom">Age:</label>
+                    <label for="nom">Age:<strong>*</strong></label>
                     {{ form_widget(form.age, {'attr': {'class': 'form-control', 'placeholder': '1ans ou 10mois'}})}}
                     {{ form_errors(form.age) }}
                 </div>
@@ -57,25 +57,25 @@
             <article class="col-md-3 col-md-offset-1 well">
                 <legend>Détails:</legend>
                 <div class="form-group">
-                    <label for="nom">Signes:</label>
-                    {{ form_widget(form.signes, {'attr': {'class': 'form-control', 'placeholder': 'Signes', 'cols': '30', 'rows':'10'}})}}
+                    <label for="nom">Signes:<strong>*</strong></label>
+                    {{ form_widget(form.signes, {'attr': {'class': 'form-control', 'placeholder': 'Minimum 10 caractères', 'cols': '30', 'rows':'10'}})}}
                     {{ form_errors(form.signes) }}
                 </div>
                 <div class="form-group">
-                    <label for="nom">Circonstances:</label>
-                    {{ form_widget(form.circonstances, {'attr': {'class': 'form-control', 'placeholder': 'Circonstances', 'cols': '30', 'rows':'10'}})}}
+                    <label for="nom">Circonstances:<strong>*</strong></label>
+                    {{ form_widget(form.circonstances, {'attr': {'class': 'form-control', 'placeholder': 'Minimum 10 caractères', 'cols': '30', 'rows':'10'}})}}
                     {{ form_errors(form.circonstances) }}
                 </div>
             </article>
             <article class="col-md-3 col-md-offset-1 well">
                 <legend>Pour vous joindre:</legend>
                 <div class="form-group">
-                    <label for="nom">Email:</label>
+                    <label for="nom">Email:<strong>*</strong></label>
                     {{ form_widget(form.mail, {'attr': {'class': 'form-control', 'placeholder': 'Email', 'cols': '30', 'rows':'10'}})}}
                     {{ form_errors(form.mail) }}
                 </div>
                 <div class="form-group">
-                    <label for="nom">Mobile:</label>
+                    <label for="nom">Mobile:<strong>*</strong></label>
                     {{ form_widget(form.mobile, {'attr': {'class': 'form-control', 'placeholder': 'Mobile', 'cols': '30', 'rows':'10'}})}}
                     {{ form_errors(form.mobile) }}
                 </div>
@@ -91,6 +91,8 @@
                     {{ form_errors(form.categorie) }}
                 </div>
                 <div class="g-recaptcha" data-sitekey="6Ld8nR8UAAAAAIYdiriuzmfxHREYMBnS1pqRr_QP"></div>
+                <br>
+                <div id="requis"><p><strong>*</strong> Champs requis.</p></div>
             </article>
         </div>
         <div class="container">

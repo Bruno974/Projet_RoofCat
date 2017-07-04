@@ -3,6 +3,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Annonce
@@ -31,6 +32,12 @@ class Annonce
     /**
      * @var string
      *
+     * @Assert\Length(min=3, minMessage="La description doit faire au moins {{ limit }} caractères.")
+     * @Assert\Regex(
+     *     pattern="/\d/",
+     *     match=false,
+     *     message="la description ne peut pas contenir de chiffres.")
+     *
      * @ORM\Column(name="description", type="string", length=255)
      */
     private $description;
@@ -52,12 +59,16 @@ class Annonce
     /**
      * @var string
      *
+     * @Assert\Length(min=10, minMessage="Les signes doivent faire au moins {{ limit }} caractères.")
+     *
      * @ORM\Column(name="signes", type="text")
      */
     private $signes;
 
     /**
      * @var string
+     *
+     * @Assert\Length(min=10, minMessage="Les circonstances doivent faire au moins {{ limit }} caractères.")
      *
      * @ORM\Column(name="circonstances", type="text")
      */
@@ -81,6 +92,8 @@ class Annonce
      * @var string
      *
      * @ORM\Column(name="mail", type="string", length=255)
+     *
+     * @Assert\Email()
      */
     private $mail;
 
@@ -88,6 +101,8 @@ class Annonce
      * @var int
      *
      * @ORM\Column(name="mobile", type="integer")
+     *
+     * @Assert\Length(min=9, minMessage="Le numéro doit faire au moins {{ limit }} caractères.")
      */
     private $mobile;
 

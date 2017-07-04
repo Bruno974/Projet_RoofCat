@@ -12,6 +12,10 @@ h2{color:white; text-shadow: 0.05em 0.05em rgba(63,107,169, 0.7); margin-bottom:
 
 .gauche{margin-left: 4%}
 
+strong{color: red; font-size: 1.3em;}
+
+#requis p{color: black}
+
 @media(max-width:500px) {
     #rc-imageselect, .g-recaptcha {
         transform: scale(0.65);
