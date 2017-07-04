@@ -50,7 +50,11 @@
                             <div class="overlay">
                                 <h4>{{ annonceDerniere.categorie.nom }}</h4><h6>{{ annonceDerniere.departement.departementNom }}</h6>
                                 <p><small>{{ annonceDerniere.description }} {{ annonceDerniere.signes }}</small></p>
-                                <a href="#" class="button-2">Plus d'infos</a>
+                                {% if annonceDerniere.categorie.id == 2 %}
+                                    <a href="{{ path('annoncePerdu', {'departement': annonceDerniere.departement.id }) }}" class="button-2">Plus d'infos</a>
+                                {% else %}
+                                    <a href="{{ path('annonceTrouve', {'departement': annonceDerniere.departement.id }) }}" class="button-2">Plus d'infos</a>
+                                {% endif %}
                             </div>
                         </article>
                     </div>
@@ -63,7 +67,12 @@
                                 <div class="overlay">
                                     <h4>{{ annonce.categorie.nom }}</h4><h6>{{ annonce.departement.departementNom }}</h6>
                                     <p><small>{{ annonce.description }} {{ annonce.signes }}</small></p>
-                                    <a href="#" class="button-2">Plus d'infos</a>
+                                    {{ dump(annonce.categorie.id) }}
+                                    {% if annonce.categorie.id == 2 %}
+                                        <a href="{{ path('annoncePerdu', {'departement': annonce.departement.id }) }}" class="button-2">Plus d'infos</a>
+                                    {% else %}
+                                        <a href="{{ path('annonceTrouve', {'departement': annonce.departement.id }) }}" class="button-2">Plus d'infos</a>
+                                    {% endif %}
                                 </div>
                             </article>
                         </div>
