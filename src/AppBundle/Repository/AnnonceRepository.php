@@ -22,7 +22,7 @@ class AnnonceRepository extends \Doctrine\ORM\EntityRepository
             ->orderBy('a.id', 'DESC')
             ->setMaxResults(1)
             ->getQuery()
-            ->getSingleResult();
+            ->getOneOrNullResult();
     }
 
     public function findAllTouverParDepartement($idDepartement, $page, $nbreParPage)

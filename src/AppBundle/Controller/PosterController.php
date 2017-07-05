@@ -27,13 +27,12 @@ class PosterController extends Controller
 
         if ($request->isMethod('POST') && $form->handleRequest($request)->isValid())
         {
-
-
             $this->handleImage($annonce);
             $em = $this->getDoctrine()->getManager();
             $em->persist($annonce);
             $em->flush();
-            return $this->redirectToRoute('accueil');
+            $request->getSession()->getFlashBag()->add('info', 'Votre annonce a bien été enregistré.');
+            return $this->redirectToRoute('poster');
         }
 
         return $this->render('Poster/poster.html.twig', array('form' => $form->createView()));

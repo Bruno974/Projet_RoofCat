@@ -30,7 +30,7 @@ $(function () {
 
     $("#appbundle_annonce_tatouage").keyup(function() {
 
-        if(!$(this).val().match(/^[a-z]{5,}$/i)) //Minimum 3 chiffres, pas de caractères spéciaux.
+        if(!$(this).val().match(/^[a-z0-9]{5,}$/i)) //Minimum 3 chiffres, pas de caractères spéciaux.
         {
             $(this).css('background-color', '#ff877b');
         }

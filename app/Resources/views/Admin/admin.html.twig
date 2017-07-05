@@ -33,7 +33,7 @@
                                 <th>Descriptif</th>
                                 <th>Tatouage</th>
                                 <th>Identification</th>
-                                <th>Action</th>  <!-- Actions column -->
+                                <th>Action</th>
                             </tr>
                         </thead>
                         {% for annonce in annonces %}
@@ -59,7 +59,6 @@
                                     {% endif %}
                                 </td>
                                 <td>
-                                    {#<a href="{{ path('editer_episode', {'id': episode.id}) }}" class="btn btn-info btn-xs" title="Editer"><span class="glyphicon glyphicon-edit"></span></a>#}
                                     <button type="button" class="btn btn-danger btn-xs" title="Supprimer" data-toggle="modal" data-target="#articleDialog{{ annonce.id }}"><span class="glyphicon glyphicon-remove"></span>
                                     </button>
                                     <div class="modal fade" id="articleDialog{{ annonce.id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -70,15 +69,15 @@
                                                     <h4 class="modal-title" id="myModalLabel">Confirmation</h4>
                                                 </div>
                                                 <div class="modal-body">
-                                                    Voulez-vous vraiment effacer cette épisode ?
+                                                    Voulez-vous vraiment effacer cette annonce ?
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
-                                                    {#<a href="{{ path('supprimer_episode', {'id': episode.id}) }}" class="btn btn-danger">Confirmer</a>#}
+                                                    <a href="{{ path('supprimer_annonce', {'id': annonce.id}) }}" class="btn btn-danger">Confirmer</a>
                                                 </div>
-                                            </div><!-- /.modal-content -->
-                                        </div><!-- /.modal-dialog -->
-                                    </div><!-- /.modal -->
+                                            </div>
+                                        </div>
+                                    </div>
                                 </td>
                             </tr>
                             {% else %}
@@ -125,7 +124,6 @@
                                     {% endif %}
                                 </td>
                                 <td>
-                                    {#<a href="{{ path('editer_episode', {'id': episode.id}) }}" class="btn btn-info btn-xs" title="Editer"><span class="glyphicon glyphicon-edit"></span></a>#}
                                     <button type="button" class="btn btn-danger btn-xs" title="Supprimer" data-toggle="modal" data-target="#articleDialog{{ annonce.id }}"><span class="glyphicon glyphicon-remove"></span>
                                     </button>
                                     <div class="modal fade" id="articleDialog{{ annonce.id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -140,11 +138,11 @@
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
-                                                    {#<a href="{{ path('supprimer_episode', {'id': episode.id}) }}" class="btn btn-danger">Confirmer</a>#}
+                                                    <a href="{{ path('supprimer_annonce', {'id': annonce.id}) }}" class="btn btn-danger">Confirmer</a>
                                                 </div>
-                                            </div><!-- /.modal-content -->
-                                        </div><!-- /.modal-dialog -->
-                                    </div><!-- /.modal -->
+                                            </div>
+                                        </div>
+                                    </div>
                                 </td>
                             </tr>
                                 {% else %}

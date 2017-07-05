@@ -48,12 +48,17 @@
                     <div class="annonce-block">
                         <article class="annonces">
                             <div class="overlay">
-                                <h4>{{ annonceDerniere.categorie.nom }}</h4><h6>{{ annonceDerniere.departement.departementNom }}</h6>
-                                <p><small>{{ annonceDerniere.description }} <br> {{ annonceDerniere.signes }}</small></p>
-                                {% if annonceDerniere.categorie.id == 2 %}
-                                    <a href="{{ path('annoncePerdu', {'departement': annonceDerniere.departement.id }) }}" class="button-2">Plus d'infos</a>
+                                {% if annonceDerniere is empty %}
+                                    <h4>Aucune</h4><h6>Aucune</h6>
+                                    <p><small>Aucune <br> Aucune </small></p>
                                 {% else %}
-                                    <a href="{{ path('annonceTrouve', {'departement': annonceDerniere.departement.id }) }}" class="button-2">Plus d'infos</a>
+                                    <h4>{{ annonceDerniere.categorie.nom }}</h4><h6>{{ annonceDerniere.departement.departementNom }}</h6>
+                                    <p><small>{{ annonceDerniere.description }} <br> {{ annonceDerniere.signes }}</small></p>
+                                    {% if annonceDerniere.categorie.id == 2 %}
+                                        <a href="{{ path('annoncePerdu', {'departement': annonceDerniere.departement.id }) }}" class="button-2">Plus d'infos</a>
+                                    {% else %}
+                                        <a href="{{ path('annonceTrouve', {'departement': annonceDerniere.departement.id }) }}" class="button-2">Plus d'infos</a>
+                                    {% endif %}
                                 {% endif %}
                             </div>
                         </article>
