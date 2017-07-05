@@ -52,9 +52,9 @@ class Annonce
     /**
      * @var string
      *
-     * @ORM\Column(name="age", type="string", length=60)
+     * @ORM\Column(name="tatouage", type="string", length=60)
      */
-    private $age;
+    private $tatouage;
 
     /**
      * @var string
@@ -217,30 +217,6 @@ class Annonce
     public function getSexe()
     {
         return $this->sexe;
-    }
-
-    /**
-     * Set age
-     *
-     * @param string $age
-     *
-     * @return Annonce
-     */
-    public function setAge($age)
-    {
-        $this->age = $age;
-
-        return $this;
-    }
-
-    /**
-     * Get age
-     *
-     * @return string
-     */
-    public function getAge()
-    {
-        return $this->age;
     }
 
     /**
@@ -481,5 +457,29 @@ class Annonce
     public function getImageUrl()
     {
         return $this->imageUrl;
+    }
+
+    /**
+     * Set tatouage
+     *
+     * @param string $tatouage
+     *
+     * @return Annonce
+     */
+    public function setTatouage($tatouage)
+    {
+        $this->tatouage = $tatouage;
+
+        return $this;
+    }
+
+    /**
+     * Get tatouage
+     *
+     * @return string
+     */
+    public function getTatouage()
+    {
+        return $this->tatouage;
     }
 }

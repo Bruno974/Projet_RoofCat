@@ -31,7 +31,7 @@ class AnnonceType extends AbstractType
                     'Mâle' => 'male',
                     'Femelle' => 'femelle',
                 )))
-            ->add('age', TextType::class)
+            ->add('tatouage', TextType::class, array( 'required' => false))
             ->add('signes', TextareaType::class)
             ->add('circonstances', TextareaType::class)
             ->add('identification', NumberType::class, array( 'required' => false))

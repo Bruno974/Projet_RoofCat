@@ -3,6 +3,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Annonce
@@ -31,6 +32,12 @@ class Annonce
     /**
      * @var string
      *
+     * @Assert\Length(min=3, minMessage="La description doit faire au moins {{ limit }} caractères.")
+     * @Assert\Regex(
+     *     pattern="/\d/",
+     *     match=false,
+     *     message="la description ne peut pas contenir de chiffres.")
+     *
      * @ORM\Column(name="description", type="string", length=255)
      */
     private $description;
@@ -45,12 +52,14 @@ class Annonce
     /**
      * @var string
      *
-     * @ORM\Column(name="age", type="string", length=60)
+     * @ORM\Column(name="tatouage", type="string", length=60)
      */
-    private $age;
+    private $tatouage;
 
     /**
      * @var string
+     *
+     * @Assert\Length(min=10, minMessage="Les signes doivent faire au moins {{ limit }} caractères.")
      *
      * @ORM\Column(name="signes", type="text")
      */
@@ -58,6 +67,8 @@ class Annonce
 
     /**
      * @var string
+     *
+     * @Assert\Length(min=10, minMessage="Les circonstances doivent faire au moins {{ limit }} caractères.")
      *
      * @ORM\Column(name="circonstances", type="text")
      */
@@ -81,6 +92,8 @@ class Annonce
      * @var string
      *
      * @ORM\Column(name="mail", type="string", length=255)
+     *
+     * @Assert\Email()
      */
     private $mail;
 
@@ -88,6 +101,8 @@ class Annonce
      * @var int
      *
      * @ORM\Column(name="mobile", type="integer")
+     *
+     * @Assert\Length(min=9, minMessage="Le numéro doit faire au moins {{ limit }} caractères.")
      */
     private $mobile;
 
@@ -115,6 +130,11 @@ class Annonce
      * @ORM\Column(name="image_url", type="text")
      */
     private $imageUrl;
+
+    public function __construct()
+    {
+        $this->setDate(new \DateTime());
+    }
 
 
     /**
@@ -437,5 +457,29 @@ class Annonce
     public function getCategorie()
     {
         return $this->categorie;
+    }
+
+    /**
+     * Set imageUrl
+     *
+     * @param string $imageUrl
+     *
+     * @return Annonce
+     */
+    public function setImageUrl($imageUrl)
+    {
+        $this->imageUrl = $imageUrl;
+
+        return $this;
+    }
+
+    /**
+     * Get imageUrl
+     *
+     * @return string
+     */
+    public function getImageUrl()
+    {
+        return $this->imageUrl;
     }
 }

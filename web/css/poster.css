@@ -16,7 +16,7 @@ strong{color: red; font-size: 1.3em;}
 
 #requis p{color: black}
 
-@media(max-width:500px) {
+@media(max-width:1300px) {
     #rc-imageselect, .g-recaptcha {
         transform: scale(0.65);
         transform-origin: 0;

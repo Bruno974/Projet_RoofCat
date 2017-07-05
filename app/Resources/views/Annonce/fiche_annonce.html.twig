@@ -11,8 +11,17 @@
             <p><strong>Description:</strong><small> {{ annonce.description }}</small></p>
             <p><strong>sexe:</strong><small> {{ annonce.sexe }}</small></p>
             <p><strong>race:</strong><small> {{ annonce.race.nom }}</small></p>
-            <p><strong>AGE:</strong><small> {{ annonce.age }}</small></p>
-            <p><strong>IDENTIFICATION:</strong><small> non</small></p>
+            {% if  annonce.tatouage == null %}
+                <p><strong>tatouage:</strong><small> non</small></p>
+            {% else %}
+                <p><strong>tatouage:</strong><small> {{ annonce.tatouage }}</small></p>
+            {% endif %}
+
+            {% if  annonce.identification == null %}
+                <p><strong>identification:</strong><small> non</small></p>
+            {% else %}
+                <p><strong>identification:</strong><small> {{ annonce.identification }}</small></p>
+            {% endif %}
             <p><strong>STERILISATION:</strong><small> {{ annonce.sterilisation }}</small></p>
 
             <legend>Détails:</legend>

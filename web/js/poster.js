@@ -28,6 +28,18 @@ $(function () {
         }
     });
 
+    $("#appbundle_annonce_tatouage").keyup(function() {
+
+        if(!$(this).val().match(/^[a-z]{5,}$/i)) //Minimum 3 chiffres, pas de caractères spéciaux.
+        {
+            $(this).css('background-color', '#ff877b');
+        }
+        else
+        {
+            $(this).css('background-color', '#c9ffd2');
+        }
+    });
+
     $("#appbundle_annonce_signes").keyup(function() {
 
         if(!$(this).val().match(/^[a-z0-9]{10}/i))//Minimum 10 caractère, pas de caractères spéciaux.
