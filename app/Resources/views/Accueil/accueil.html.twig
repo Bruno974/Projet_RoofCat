@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="{{ asset('css/accueil.css') }}" xmlns="http://www.w3.org/1999/html">
 {% endblock %}
 
-{% block body %}
+{% block body  %}
 
     <section id="main-image">
         <h2>Aidez les<br><strong id="strong">à retrouver leur toit</strong></h2>
@@ -49,7 +49,7 @@
                         <article class="annonces">
                             <div class="overlay">
                                 <h4>{{ annonceDerniere.categorie.nom }}</h4><h6>{{ annonceDerniere.departement.departementNom }}</h6>
-                                <p><small>{{ annonceDerniere.description }} {{ annonceDerniere.signes }}</small></p>
+                                <p><small>{{ annonceDerniere.description }} <br> {{ annonceDerniere.signes }}</small></p>
                                 {% if annonceDerniere.categorie.id == 2 %}
                                     <a href="{{ path('annoncePerdu', {'departement': annonceDerniere.departement.id }) }}" class="button-2">Plus d'infos</a>
                                 {% else %}
@@ -66,8 +66,7 @@
                             <article class="annonces">
                                 <div class="overlay">
                                     <h4>{{ annonce.categorie.nom }}</h4><h6>{{ annonce.departement.departementNom }}</h6>
-                                    <p><small>{{ annonce.description }} {{ annonce.signes }}</small></p>
-                                    {{ dump(annonce.categorie.id) }}
+                                    <p><small>{{ annonce.description }} <br> {{ annonce.signes }}</small></p>
                                     {% if annonce.categorie.id == 2 %}
                                         <a href="{{ path('annoncePerdu', {'departement': annonce.departement.id }) }}" class="button-2">Plus d'infos</a>
                                     {% else %}
@@ -91,4 +90,8 @@
         </div>
     </section>
 
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('js/accueil.js') }}"></script>
 {% endblock %}

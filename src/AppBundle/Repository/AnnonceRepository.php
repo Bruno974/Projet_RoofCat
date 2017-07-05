@@ -32,9 +32,10 @@ class AnnonceRepository extends \Doctrine\ORM\EntityRepository
             ->where('a.departement = :idDepartement')
             ->setParameter('idDepartement', $idDepartement)
             ->andWhere('a.categorie = 1 ')
+            ->orderBy('a.id', 'DESC')
             ->getQuery()
-            ->setFirstResult(($page-1) * $nbreParPage) //On définit l'article à partir duquel commencer la liste
-            ->setMaxResults($nbreParPage); //Le nombre d'épisode à afficher sur une page
+            ->setFirstResult(($page-1) * $nbreParPage)
+            ->setMaxResults($nbreParPage);
 
         return new Paginator($query, true);
     }
@@ -45,12 +46,10 @@ class AnnonceRepository extends \Doctrine\ORM\EntityRepository
             ->where('a.departement = :idDepartement')
             ->setParameter('idDepartement', $idDepartement)
             ->andWhere('a.categorie = 2 ')
+            ->orderBy('a.id', 'DESC')
             ->getQuery()
-            ->setFirstResult(($page-1) * $nbreParPage) //On définit l'article à partir duquel commencer la liste
-            ->setMaxResults($nbreParPage); //Le nombre d'épisode à afficher sur une page
-
-       /* var_dump($query);
-        die();*/
+            ->setFirstResult(($page-1) * $nbreParPage)
+            ->setMaxResults($nbreParPage);
 
         return new Paginator($query, true);
     }

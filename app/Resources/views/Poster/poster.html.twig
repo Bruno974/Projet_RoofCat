@@ -21,6 +21,7 @@
                     <label for="nom">Description:<strong>*</strong></label>
                     {{ form_widget(form.description, {'attr': {'class': 'form-control', 'placeholder': 'Minimum 3 caractères'}})}}
                     {{ form_errors(form.description) }}
+                    <small id="description">Minimun 3 carctères et pas de chiffres.</small>
                 </div>
                 <div class="form-group">
                     <label for="picture">Image</label>
@@ -46,6 +47,7 @@
                     <label for="nom">Identification:</label>
                     {{ form_widget(form.identification, {'attr': {'class': 'form-control', 'placeholder': '250269811205512', 'cols': '30', 'rows':'10'}})}}
                     {{ form_errors(form.identification) }}
+                    <small id="identification">Minimun 15 chiffres - Pas de lettres - pas de caractères spéciaux.</small>
                 </div>
 
                 <div class="form-group">
@@ -103,4 +105,8 @@
             {{ form_end(form) }}
         </div>
     </section>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('js/poster.js') }}"></script>
 {% endblock %}
