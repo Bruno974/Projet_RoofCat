@@ -27,12 +27,32 @@ class PosterController extends Controller
 
         if ($request->isMethod('POST') && $form->handleRequest($request)->isValid())
         {
-            $this->handleImage($annonce);
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($annonce);
-            $em->flush();
-            $request->getSession()->getFlashBag()->add('info', 'Votre annonce a bien été enregistré.');
-            return $this->redirectToRoute('poster');
+            //clé privée
+            $secret = "6LeGqiUTAAAAAE8A_zkDw_mGRnMeFwCdzRevmyYz";
+            //Paramètre renvoyé par le recaptcha
+            $response = $request->get('g-recaptcha-response');
+            //On récupère l'IP de l'utilisateur
+            $remoteip = $request->server->get('REMOTE_ADDR');
+            $api_url = "https://www.google.com/recaptcha/api/siteverify?secret="
+                . $secret
+                . "&response=" . $response
+                . "&remoteip=" . $remoteip ;
+
+            $decode = json_decode(file_get_contents($api_url), true);
+
+            if ($decode['success'] == true) {
+                $this->handleImage($annonce);
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($annonce);
+                $em->flush();
+                $request->getSession()->getFlashBag()->add('info', 'Votre annonce a bien été enregistré.');
+                return $this->redirectToRoute('poster');
+            }
+            else
+            {
+                $request->getSession()->getFlashBag()->add('info', 'Votre annonce n\' a pas été posté. Pensez bien à cocher la case je ne suis pas un robot.');
+                return $this->redirectToRoute('poster');
+            }
         }
 
         return $this->render('Poster/poster.html.twig', array('form' => $form->createView()));

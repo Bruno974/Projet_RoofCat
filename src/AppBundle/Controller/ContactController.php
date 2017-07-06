@@ -28,7 +28,7 @@ class ContactController extends Controller
         if ($request->isMethod('POST') && $form->handleRequest($request)->isValid())
         {
             //clé privée
-            $secret = "6Ld8nR8UAAAAAHm5kF4EO5Or1TjpUyjX1khWHPPK";
+            $secret = "6LeGqiUTAAAAAE8A_zkDw_mGRnMeFwCdzRevmyYz";
             //Paramètre renvoyé par le recaptcha
             $response = $request->get('g-recaptcha-response');
             //On récupère l'IP de l'utilisateur
