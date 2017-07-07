@@ -17,7 +17,7 @@
 
 #actions h4{ text-transform: uppercase; margin-bottom: 20px; }
 
-#actions p{ margin-bottom: 20px; }
+#actions p{ margin-bottom: 20px; margin-top: 35px; }
 
 #action-1{ background: url("../images/search-accueil.png") no-repeat top center;}
 
