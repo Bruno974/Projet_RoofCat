@@ -6,7 +6,7 @@ legend{ color: orange; text-shadow: black 0.05em 0.05em; font-weight: bold; }
 
 body{ background-image: url("../images/fond_poster.jpg");  background-repeat: no-repeat;}
 
-h2{color:white; text-shadow: 0.05em 0.05em rgba(63,107,169, 0.7); margin-bottom: 30px; text-transform: uppercase; font-family: 'Crete Round'}
+.container h1{color: darkorange; font-size: 2.6em; font-weight: bold; text-shadow: 0.05em 0.05em rgba(0,0,0, 0.7); margin-bottom: 40px; text-transform: uppercase;}
 
 .btn{ margin-top: -100px;}
 
@@ -28,6 +28,12 @@ strong{color: red; font-size: 1.3em;}
         transform-origin: 0 0;
     }}
 
+@media(max-width:990px)
+{
+    .gauche{margin-left: 0%}
+    .container{ margin-top: 80px; }
+    body{background-size: cover;}
+}
 
 
 small{ display: none; color: red;}
