@@ -1,0 +1,6 @@
+h2{ margin-top: 120px; }
+
+@media(max-width: 990px)
+{
+    h2{ margin-top: 70px; }
+}

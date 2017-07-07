@@ -27,11 +27,12 @@ class ContactController extends Controller
 
         if ($request->isMethod('POST') && $form->handleRequest($request)->isValid())
         {
-            //clé privée
-            $secret = "6LeGqiUTAAAAAE8A_zkDw_mGRnMeFwCdzRevmyYz";
-            //Paramètre renvoyé par le recaptcha
+
+            $this->get('mail')->sendContactMail($formulaireContact);
+            $request->getSession()->getFlashBag()->add('info', 'Votre mail a bien été envoyé.');
+            return $this->redirectToRoute('contact');
+           /* $secret = "6LeGqiUTAAAAAE8A_zkDw_mGRnMeFwCdzRevmyYz";
             $response = $request->get('g-recaptcha-response');
-            //On récupère l'IP de l'utilisateur
             $remoteip = $request->server->get('REMOTE_ADDR');
             $api_url = "https://www.google.com/recaptcha/api/siteverify?secret="
                 . $secret
@@ -42,17 +43,16 @@ class ContactController extends Controller
 
             if ($decode['success'] == true)
             {
-                // C'est un humain
                 $this->get('mail')->sendContactMail($formulaireContact);
                 $request->getSession()->getFlashBag()->add('info', 'Votre mail a bien été envoyé.');
                 return $this->redirectToRoute('contact');
             }
             else
             {
-                // C'est un robot ou le code de vérification est incorrecte
+
                 $request->getSession()->getFlashBag()->add('info', 'Votre mail n\' a pas été envoyé. Pensez bien à cocher la case je ne suis pas un robot.');
                 return $this->redirectToRoute('contact');
-            }
+            }*/
         }
         return $this->render('Contact/contact.html.twig', array('form' => $form->createView()));
     }

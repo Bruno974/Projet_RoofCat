@@ -33,3 +33,9 @@ services:
     # AppBundle\Service\ExampleService:
     #     arguments:
     #         $someArgument: 'some_value'
+
+    mail:
+        class: AppBundle\Services\ContactService
+        arguments:
+            - "@mailer"
+            - "@templating"
