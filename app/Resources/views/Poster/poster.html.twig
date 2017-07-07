@@ -23,11 +23,11 @@
             {{ form_errors(form) }}
             <article class="col-md-3 well gauche">
                 <legend>Chat:</legend>
-                <div class="form-group">
+                <div class="form-group description">
                     <label for="nom">Description:<strong>*</strong></label>
                     {{ form_widget(form.description, {'attr': {'class': 'form-control', 'placeholder': 'Minimum 3 caractères'}})}}
                     {{ form_errors(form.description) }}
-                    <small id="description">Minimun 3 carctères et pas de chiffres.</small>
+                    <small id="description">Minimun 10 caractères et pas de chiffres.</small>
                 </div>
                 <div class="form-group">
                     <label for="picture">Image</label>
@@ -44,12 +44,13 @@
                     {{ form_widget(form.race, {'attr': {'class': 'form-control', 'placeholder': 'Race', 'cols': '30', 'rows':'10'}})}}
                     {{ form_errors(form.race) }}
                 </div>
-                <div class="form-group">
+                <div class="form-group tatouage">
                     <label for="nom">Tatouage:</label>
                     {{ form_widget(form.tatouage, {'attr': {'class': 'form-control', 'placeholder': '129ZEP'}})}}
                     {{ form_errors(form.tatouage) }}
+                    <small id="tatouage">format: 129ZEP ou ZEP129</small>
                 </div>
-                <div class="form-group">
+                <div class="form-group identification">
                     <label for="nom">Identification:</label>
                     {{ form_widget(form.identification, {'attr': {'class': 'form-control', 'placeholder': '250269811205512', 'cols': '30', 'rows':'10'}})}}
                     {{ form_errors(form.identification) }}
@@ -64,28 +65,32 @@
             </article>
             <article class="col-md-3 col-md-offset-1 well">
                 <legend>Détails:</legend>
-                <div class="form-group">
+                <div class="form-group signes">
                     <label for="nom">Signes:<strong>*</strong></label>
                     {{ form_widget(form.signes, {'attr': {'class': 'form-control', 'placeholder': 'Minimum 10 caractères', 'cols': '30', 'rows':'10'}})}}
                     {{ form_errors(form.signes) }}
+                    <small id="signes">Minimun 10 caractères.</small>
                 </div>
-                <div class="form-group">
+                <div class="form-group circonstances">
                     <label for="nom">Circonstances:<strong>*</strong></label>
                     {{ form_widget(form.circonstances, {'attr': {'class': 'form-control', 'placeholder': 'Minimum 10 caractères', 'cols': '30', 'rows':'10'}})}}
                     {{ form_errors(form.circonstances) }}
+                    <small id="circonstances">Minimun 10 caractères.</small>
                 </div>
             </article>
             <article class="col-md-3 col-md-offset-1 well">
                 <legend>Pour vous joindre:</legend>
-                <div class="form-group">
+                <div class="form-group email">
                     <label for="nom">Email:<strong>*</strong></label>
                     {{ form_widget(form.mail, {'attr': {'class': 'form-control', 'placeholder': 'Email', 'cols': '30', 'rows':'10'}})}}
                     {{ form_errors(form.mail) }}
+                    <small id="email">Email non valide.</small>
                 </div>
-                <div class="form-group">
+                <div class="form-group mobile">
                     <label for="nom">Mobile:<strong>*</strong></label>
                     {{ form_widget(form.mobile, {'attr': {'class': 'form-control', 'placeholder': 'Mobile', 'cols': '30', 'rows':'10'}})}}
                     {{ form_errors(form.mobile) }}
+                    <small id="mobile">10 chiffres - Débute par 06 ou 07</small>
                 </div>
                 <div class="form-group">
                     <label for="nom">Département:</label>

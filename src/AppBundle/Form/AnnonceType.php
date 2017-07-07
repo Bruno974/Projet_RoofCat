@@ -34,14 +34,14 @@ class AnnonceType extends AbstractType
             ->add('tatouage', TextType::class, array( 'required' => false))
             ->add('signes', TextareaType::class)
             ->add('circonstances', TextareaType::class)
-            ->add('identification', NumberType::class, array( 'required' => false))
+            ->add('identification', NumberType::class, array( 'required' => false, 'invalid_message' => 'Minimun 15 chiffres - Pas de lettres - pas de caractères spéciaux.'))
             ->add('sterilisation',  ChoiceType::class, array(
                 'choices'  => array(
                     'Oui' => 'oui',
                     'Non' => 'non',
                 )))
-            ->add('mail', EmailType::class)
-            ->add('mobile', NumberType::class)
+            ->add('mail', EmailType::class,  array('invalid_message' => 'Email non valide'))
+            ->add('mobile', NumberType::class, array('invalid_message' => '10 chiffres - Débute par 06 ou 07'))
             ->add('race', EntityType::class, array(
                 'class'        => 'AppBundle:Race',
                 'choice_label' => 'nom',

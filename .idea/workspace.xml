@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae8a95f7-6127-431a-93ca-1fb08bba4298" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/Accueil/accueil.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/Accueil/accueil.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/Admin/admin.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/Admin/admin.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/accueil.css" afterPath="$PROJECT_DIR$/web/css/accueil.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/accueil.js" afterPath="$PROJECT_DIR$/web/js/accueil.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/Poster/poster.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/Poster/poster.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config_dev.yml" afterPath="$PROJECT_DIR$/app/config/config_dev.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Annonce.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Annonce.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Form/AnnonceType.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/AnnonceType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/poster.css" afterPath="$PROJECT_DIR$/web/css/poster.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/poster.js" afterPath="$PROJECT_DIR$/web/js/poster.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,27 +19,77 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config_dev.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="816">
+              <caret line="48" column="4" lean-forward="false" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnnonceType.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/AnnonceType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="42" column="91" lean-forward="false" selection-start-line="42" selection-start-column="91" selection-end-line="42" selection-end-column="91" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="poster.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/Poster/poster.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="-680">
+              <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/Login/login.html.twig">
+      <file leaf-file-name="AnnonceController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/AnnonceController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+            <state relative-caret-position="717">
+              <caret line="61" column="12" lean-forward="false" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="accueil.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Annonce.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Annonce.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="511">
+              <caret line="55" column="42" lean-forward="false" selection-start-line="55" selection-start-column="42" selection-end-line="55" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="poster.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/js/poster.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="516">
+              <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="accueil.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/Accueil/accueil.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
@@ -58,61 +109,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="accueil.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/css/accueil.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="47" lean-forward="false" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/css/login.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/Admin/admin.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="643">
-              <caret line="147" column="28" lean-forward="false" selection-start-line="147" selection-start-column="28" selection-end-line="147" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="accueil.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/accueil.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/css/admin.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="5" lean-forward="false" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="poster.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/css/poster.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="28" selection-end-column="6" />
+            <state relative-caret-position="578">
+              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -165,10 +166,7 @@
         <option value="$PROJECT_DIR$/app/Resources/views/Legal/legal.html.twig" />
         <option value="$PROJECT_DIR$/web/css/legal.css" />
         <option value="$PROJECT_DIR$/web/css/annonce.css" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Annonce.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Form/AnnonceType.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/Annonce/fiche_annonce.html.twig" />
-        <option value="$PROJECT_DIR$/web/css/poster.css" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/SupprimerController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Repository/AnnonceRepository.php" />
@@ -178,16 +176,13 @@
         <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/LoginController.php" />
-        <option value="$PROJECT_DIR$/web/js/poster.js" />
         <option value="$PROJECT_DIR$/web/app.php" />
         <option value="$PROJECT_DIR$/web/css/contact.css" />
         <option value="$PROJECT_DIR$/app/Resources/views/Contact/contact.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/Poster/poster.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/PosterController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Services/ContactService.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/Contact/mail.html.twig" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
-        <option value="$PROJECT_DIR$/app/config/config_dev.yml" />
         <option value="$PROJECT_DIR$/app/config/config_prod.yml" />
         <option value="$PROJECT_DIR$/app/config/services.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/ContactController.php" />
@@ -199,6 +194,12 @@
         <option value="$PROJECT_DIR$/web/js/accueil.js" />
         <option value="$PROJECT_DIR$/web/css/accueil.css" />
         <option value="$PROJECT_DIR$/app/Resources/views/Accueil/accueil.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/config_dev.yml" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Form/AnnonceType.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Annonce.php" />
+        <option value="$PROJECT_DIR$/web/css/poster.css" />
+        <option value="$PROJECT_DIR$/app/Resources/views/Poster/poster.html.twig" />
+        <option value="$PROJECT_DIR$/web/js/poster.js" />
       </list>
     </option>
   </component>
@@ -419,6 +420,50 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Model" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Projet_RoofCat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Projet_RoofCat" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Form" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Projet_RoofCat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Projet_RoofCat" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entity" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -734,12 +779,12 @@
       <workItem from="1498903845267" duration="18267000" />
       <workItem from="1498991792876" duration="35810000" />
       <workItem from="1499101125958" duration="45816000" />
-      <workItem from="1499351392269" duration="10228000" />
+      <workItem from="1499351392269" duration="19878000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110121000" />
+    <option name="totallyTimeSpent" value="119771000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -845,6 +890,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -880,22 +926,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/AnnonceType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="40" column="35" lean-forward="false" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Annonce.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="53" column="6" lean-forward="false" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/Annonce/chercher.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -922,16 +952,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="27" column="7" lean-forward="false" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="81" />
-          <folding>
-            <element signature="e#123#180#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/AnnonceController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="61" column="12" lean-forward="false" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
           <folding>
             <element signature="e#123#180#0#PHP" expanded="false" />
           </folding>
@@ -979,13 +999,6 @@
           <folding>
             <element signature="e#123#180#0#PHP" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/poster.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="43" lean-forward="false" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -1066,137 +1079,121 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="72" lean-forward="false" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="45" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="3021" column="36" lean-forward="false" selection-start-line="3021" selection-start-column="36" selection-end-line="3021" selection-end-column="36" />
           <folding>
-            <marker date="1499366386304" expanded="true" signature="699:304669" ph="{...}" />
-            <marker date="1499366386304" expanded="true" signature="832:2404" ph="{...}" />
-            <marker date="1499366386304" expanded="true" signature="1101:2404" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="258443:258452" ph="{...}" />
-            <marker date="1499366386304" expanded="true" signature="258461:259030" ph=" Gets the 'security.authentication.provider.dao.main' service. ..." />
-            <marker date="1499366386304" expanded="true" signature="259109:259729" ph="{...}" />
-            <marker date="1499366386304" expanded="true" signature="259738:260290" ph=" Gets the 'security.authentication.trust_resolver' service. ..." />
-            <marker date="1499366386304" expanded="true" signature="260365:260688" ph="{...}" />
-            <marker date="1499366386304" expanded="true" signature="260697:261184" ph=" Gets the 'security.firewall.map' service. ..." />
-            <marker date="1499366386304" expanded="true" signature="261243:262934" ph="{...}" />
-            <marker date="1499366386304" expanded="true" signature="261428:261980" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="261480:261700" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="261756:261979" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="262021:262921" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="262943:263452" ph=" Gets the 'security.logout_url_generator' service. ..." />
-            <marker date="1499366386304" expanded="true" signature="263517:264327" ph="{...}" />
-            <marker date="1499366386304" expanded="true" signature="264336:264893" ph=" Gets the 'security.request_matcher.5314eeb91110adf24b9b678372bb11bbe00e8858c519c088bfb65f525181ad3bf573fd1d' service. ..." />
-            <marker date="1499366386304" expanded="true" signature="265027:265265" ph="{...}" />
-            <marker date="1499366386304" expanded="true" signature="265274:265831" ph=" Gets the 'security.request_matcher.a64d671f18e5575531d76c1d1154fdc4476cb8a79c02ed7a3469178c6d7b96b5ed4e60db' service. ..." />
-            <marker date="1499366386304" expanded="true" signature="265965:266171" ph="{...}" />
-            <marker date="1499366386304" expanded="true" signature="266180:266669" ph=" Gets the 'security.role_hierarchy' service. ..." />
-            <marker date="1499366386304" expanded="true" signature="266729:267036" ph="{...}" />
-            <marker date="1499366386304" expanded="true" signature="267045:267559" ph=" Gets the 'security.user.provider.concrete.main' service. ..." />
-            <marker date="1499366386304" expanded="true" signature="267633:267943" ph="{...}" />
-            <marker date="1499366386304" expanded="true" signature="267952:268456" ph=" Gets the 'security.user_value_resolver' service. ..." />
-            <marker date="1499366386304" expanded="true" signature="268520:268818" ph="{...}" />
-            <marker date="1499366386304" expanded="true" signature="268827:269345" ph=" Gets the 'service_locator.e64d23c3bf770e2cf44b71643280668d' service. ..." />
-            <marker date="1499366386304" expanded="true" signature="269430:270461" ph="{...}" />
-            <marker date="1499366386304" expanded="true" signature="269586:270452" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="269608:269792" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="269822:270021" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="270049:270242" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="270267:270451" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="270470:270984" ph=" Gets the 'session.storage.metadata_bag' service. ..." />
-            <marker date="1499366386304" expanded="true" signature="271049:271211" ph="{...}" />
-            <marker date="1499366386304" expanded="true" signature="271220:271706" ph=" Gets the 'swiftmailer.mailer.default.transport.eventdispatcher' service. ..." />
-            <marker date="1499366386304" expanded="true" signature="271796:271940" ph="{...}" />
-            <marker date="1499366386304" expanded="true" signature="271949:272461" ph=" Gets the 'templating.locator' service. ..." />
-            <marker date="1499366386304" expanded="true" signature="272517:272793" ph="{...}" />
-            <marker date="1499366386304" expanded="true" signature="272802:273322" ph=" Gets the 'web_profiler.csp.handler' service. ..." />
-            <marker date="1499366386304" expanded="true" signature="273383:273588" ph="{...}" />
-            <marker date="1499366386304" expanded="true" signature="273597:273624" ph=" {@inheritdoc} ..." />
-            <marker date="1499366386304" expanded="true" signature="273666:274211" ph="{...}" />
-            <marker date="1499366386304" expanded="true" signature="273852:273964" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="274025:274162" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="274220:274247" ph=" {@inheritdoc} ..." />
-            <marker date="1499366386304" expanded="true" signature="274289:274479" ph="{...}" />
-            <marker date="1499366386304" expanded="true" signature="274488:274515" ph=" {@inheritdoc} ..." />
-            <marker date="1499366386304" expanded="true" signature="274565:274665" ph="{...}" />
-            <marker date="1499366386304" expanded="true" signature="274674:274701" ph=" {@inheritdoc} ..." />
-            <marker date="1499366386304" expanded="true" signature="274741:275165" ph="{...}" />
-            <marker date="1499366386304" expanded="true" signature="274791:275121" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="274911:275040" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="275212:275485" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="275538:275803" ph=" Computes a dynamic parameter. ..." />
-            <marker date="1499366386304" expanded="true" signature="275853:280356" ph="{...}" />
-            <marker date="1499366386304" expanded="true" signature="275884:280237" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="276174:279788" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="276190:279779" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="276234:276482" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="276527:276773" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="276814:277052" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="277096:277310" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="277358:277580" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="277625:277843" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="278167:278343" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="278385:278625" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="278673:278925" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="278980:279202" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="279254:279470" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="279516:279764" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="280365:280470" ph=" Gets the default parameters. ..." />
-            <marker date="1499366386304" expanded="true" signature="280518:304667" ph="{...}" />
-            <marker date="1499366386304" expanded="true" signature="280546:304659" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="280743:281922" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="282803:282817" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="283080:283175" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="283447:283489" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="285576:285930" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="285615:285716" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="285763:285915" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="286412:286475" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="286579:286593" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="286648:287225" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="286754:286997" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="286838:286978" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="287048:287210" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="287132:287191" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="289786:289858" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="294096:294177" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="294302:294316" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="294363:294441" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="300837:303583" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="300888:301010" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="301060:301176" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="301228:301348" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="301398:301514" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="301564:301680" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="301735:301861" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="301913:302033" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="302085:302205" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="302257:302377" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="302428:302546" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="302600:302721" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="302771:302887" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="302941:303050" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="303107:303237" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="303287:303396" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="303448:303568" ph="..." />
-            <marker date="1499366386304" expanded="true" signature="303629:304648" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="699:304358" ph="{...}" />
+            <marker date="1499432212673" expanded="true" signature="832:2404" ph="{...}" />
+            <marker date="1499432212673" expanded="true" signature="1101:2404" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="258132:258141" ph="{...}" />
+            <marker date="1499432212673" expanded="true" signature="258150:258719" ph=" Gets the 'security.authentication.provider.dao.main' service. ..." />
+            <marker date="1499432212673" expanded="true" signature="258798:259418" ph="{...}" />
+            <marker date="1499432212673" expanded="true" signature="259427:259979" ph=" Gets the 'security.authentication.trust_resolver' service. ..." />
+            <marker date="1499432212673" expanded="true" signature="260054:260377" ph="{...}" />
+            <marker date="1499432212673" expanded="true" signature="260386:260873" ph=" Gets the 'security.firewall.map' service. ..." />
+            <marker date="1499432212673" expanded="true" signature="260932:262623" ph="{...}" />
+            <marker date="1499432212673" expanded="true" signature="261117:261669" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="261169:261389" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="261445:261668" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="261710:262610" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="262632:263141" ph=" Gets the 'security.logout_url_generator' service. ..." />
+            <marker date="1499432212673" expanded="true" signature="263206:264016" ph="{...}" />
+            <marker date="1499432212673" expanded="true" signature="264025:264582" ph=" Gets the 'security.request_matcher.5314eeb91110adf24b9b678372bb11bbe00e8858c519c088bfb65f525181ad3bf573fd1d' service. ..." />
+            <marker date="1499432212673" expanded="true" signature="264716:264954" ph="{...}" />
+            <marker date="1499432212673" expanded="true" signature="264963:265520" ph=" Gets the 'security.request_matcher.a64d671f18e5575531d76c1d1154fdc4476cb8a79c02ed7a3469178c6d7b96b5ed4e60db' service. ..." />
+            <marker date="1499432212673" expanded="true" signature="265654:265860" ph="{...}" />
+            <marker date="1499432212673" expanded="true" signature="265869:266358" ph=" Gets the 'security.role_hierarchy' service. ..." />
+            <marker date="1499432212673" expanded="true" signature="266418:266725" ph="{...}" />
+            <marker date="1499432212673" expanded="true" signature="266734:267248" ph=" Gets the 'security.user.provider.concrete.main' service. ..." />
+            <marker date="1499432212673" expanded="true" signature="267322:267632" ph="{...}" />
+            <marker date="1499432212673" expanded="true" signature="267641:268145" ph=" Gets the 'security.user_value_resolver' service. ..." />
+            <marker date="1499432212673" expanded="true" signature="268209:268507" ph="{...}" />
+            <marker date="1499432212673" expanded="true" signature="268516:269034" ph=" Gets the 'service_locator.e64d23c3bf770e2cf44b71643280668d' service. ..." />
+            <marker date="1499432212673" expanded="true" signature="269119:270150" ph="{...}" />
+            <marker date="1499432212673" expanded="true" signature="269275:270141" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="269297:269481" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="269511:269710" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="269738:269931" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="269956:270140" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="270159:270673" ph=" Gets the 'session.storage.metadata_bag' service. ..." />
+            <marker date="1499432212673" expanded="true" signature="270738:270900" ph="{...}" />
+            <marker date="1499432212673" expanded="true" signature="270909:271395" ph=" Gets the 'swiftmailer.mailer.default.transport.eventdispatcher' service. ..." />
+            <marker date="1499432212673" expanded="true" signature="271485:271629" ph="{...}" />
+            <marker date="1499432212673" expanded="true" signature="271638:272150" ph=" Gets the 'templating.locator' service. ..." />
+            <marker date="1499432212673" expanded="true" signature="272206:272482" ph="{...}" />
+            <marker date="1499432212673" expanded="true" signature="272491:273011" ph=" Gets the 'web_profiler.csp.handler' service. ..." />
+            <marker date="1499432212673" expanded="true" signature="273072:273277" ph="{...}" />
+            <marker date="1499432212673" expanded="true" signature="273286:273313" ph=" {@inheritdoc} ..." />
+            <marker date="1499432212673" expanded="true" signature="273355:273900" ph="{...}" />
+            <marker date="1499432212673" expanded="true" signature="273541:273653" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="273714:273851" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="273909:273936" ph=" {@inheritdoc} ..." />
+            <marker date="1499432212673" expanded="true" signature="273978:274168" ph="{...}" />
+            <marker date="1499432212673" expanded="true" signature="274177:274204" ph=" {@inheritdoc} ..." />
+            <marker date="1499432212673" expanded="true" signature="274254:274354" ph="{...}" />
+            <marker date="1499432212673" expanded="true" signature="274363:274390" ph=" {@inheritdoc} ..." />
+            <marker date="1499432212673" expanded="true" signature="274430:274854" ph="{...}" />
+            <marker date="1499432212673" expanded="true" signature="274480:274810" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="274600:274729" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="274901:275174" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="275227:275492" ph=" Computes a dynamic parameter. ..." />
+            <marker date="1499432212673" expanded="true" signature="275542:280045" ph="{...}" />
+            <marker date="1499432212673" expanded="true" signature="275573:279926" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="275863:279477" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="275879:279468" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="275923:276171" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="276216:276462" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="276503:276741" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="276785:276999" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="277047:277269" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="277314:277532" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="277856:278032" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="278074:278314" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="278362:278614" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="278669:278891" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="278943:279159" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="279205:279453" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="280054:280159" ph=" Gets the default parameters. ..." />
+            <marker date="1499432212673" expanded="true" signature="280207:304356" ph="{...}" />
+            <marker date="1499432212673" expanded="true" signature="280235:304348" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="280432:281611" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="282492:282506" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="282769:282864" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="283136:283178" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="285265:285619" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="285304:285405" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="285452:285604" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="286101:286164" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="286268:286282" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="286337:286914" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="286443:286686" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="286527:286667" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="286737:286899" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="286821:286880" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="289475:289547" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="293785:293866" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="293991:294005" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="294052:294130" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="300526:303272" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="300577:300699" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="300749:300865" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="300917:301037" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="301087:301203" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="301253:301369" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="301424:301550" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="301602:301722" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="301774:301894" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="301946:302066" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="302117:302235" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="302289:302410" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="302460:302576" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="302630:302739" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="302796:302926" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="302976:303085" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="303137:303257" ph="..." />
+            <marker date="1499432212673" expanded="true" signature="303318:304337" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1214,7 +1211,7 @@
         <state relative-caret-position="351">
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
-            <element signature="e#123#180#0#PHP" expanded="true" />
+            <element signature="e#123#180#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1223,14 +1220,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="31" column="1" lean-forward="false" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/Poster/poster.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1247,14 +1236,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/poster.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="28" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -1303,6 +1284,70 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="45" lean-forward="false" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/AnnonceController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="717">
+          <caret line="61" column="12" lean-forward="false" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" column="4" lean-forward="false" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/AnnonceType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="42" column="91" lean-forward="false" selection-start-line="42" selection-start-column="91" selection-end-line="42" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Annonce.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="55" column="42" lean-forward="false" selection-start-line="55" selection-start-column="42" selection-end-line="55" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/poster.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Poster/poster.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-680">
+          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/poster.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -32,11 +32,11 @@ class Annonce
     /**
      * @var string
      *
-     * @Assert\Length(min=3, minMessage="La description doit faire au moins {{ limit }} caractères.")
+     * @Assert\Length(min=3, minMessage="Minimun 10 caractères")
      * @Assert\Regex(
      *     pattern="/\d/",
      *     match=false,
-     *     message="la description ne peut pas contenir de chiffres.")
+     *     message="Pas de chiffres.")
      *
      * @ORM\Column(name="description", type="string", length=255)
      */
@@ -53,6 +53,7 @@ class Annonce
      * @var string
      *
      * @ORM\Column(name="tatouage", type="string", length=60)
+     * @Assert\Length(min=3, minMessage=" format: 129ZEP ou ZEP129")
      */
     private $tatouage;
 
@@ -93,7 +94,7 @@ class Annonce
      *
      * @ORM\Column(name="mail", type="string", length=255)
      *
-     * @Assert\Email()
+     * @Assert\Email(message = "Email '{{ value }}' n'est pas valide.")
      */
     private $mail;
 
