@@ -31,7 +31,7 @@
                             <tr>
                                 <th>Numéro</th>
                                 <th>Date</th>
-                                <th>Descriptif</th>
+                                <th>Département</th>
                                 <th>Tatouage</th>
                                 <th>Identification</th>
                                 <th>Action</th>
@@ -44,7 +44,7 @@
                                     {% autoescape %}
                                         <td>{{ annonce.date|date('d/m/Y') }}</td>
                                     {% endautoescape %}
-                                    <td>{{ annonce.description }}</td>
+                                    <td>{{ annonce.departement.departementNom  }}</td>
                                     <td>
                                         {% if  annonce.tatouage  == null %}
                                             <span>Non</span>
@@ -95,7 +95,7 @@
                         <tr>
                             <th>Numéro</th>
                             <th>Date</th>
-                            <th>Descriptif</th>
+                            <th>Département</th>
                             <th>Tatouage</th>
                             <th>Identification</th>
                             <th>Action</th>  <!-- Actions column -->
@@ -108,7 +108,7 @@
                                     {% autoescape %}
                                         <td>{{ annonce.date|date('d/m/Y') }}</td>
                                     {% endautoescape %}
-                                    <td>{{ annonce.description }}</td>
+                                    <td>{{ annonce.departement.departementNom }}</td>
                                     <td>
                                         {% if  annonce.tatouage  == null %}
                                             <span>Non</span>

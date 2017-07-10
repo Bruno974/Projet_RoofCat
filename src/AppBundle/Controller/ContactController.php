@@ -28,10 +28,7 @@ class ContactController extends Controller
         if ($request->isMethod('POST') && $form->handleRequest($request)->isValid())
         {
 
-            $this->get('mail')->sendContactMail($formulaireContact);
-            $request->getSession()->getFlashBag()->add('info', 'Votre mail a bien été envoyé.');
-            return $this->redirectToRoute('contact');
-           /* $secret = "6LeGqiUTAAAAAE8A_zkDw_mGRnMeFwCdzRevmyYz";
+            $secret = "6LeGqiUTAAAAAE8A_zkDw_mGRnMeFwCdzRevmyYz";
             $response = $request->get('g-recaptcha-response');
             $remoteip = $request->server->get('REMOTE_ADDR');
             $api_url = "https://www.google.com/recaptcha/api/siteverify?secret="
@@ -52,7 +49,7 @@ class ContactController extends Controller
 
                 $request->getSession()->getFlashBag()->add('info', 'Votre mail n\' a pas été envoyé. Pensez bien à cocher la case je ne suis pas un robot.');
                 return $this->redirectToRoute('contact');
-            }*/
+            }
         }
         return $this->render('Contact/contact.html.twig', array('form' => $form->createView()));
     }

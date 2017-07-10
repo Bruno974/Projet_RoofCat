@@ -50,7 +50,7 @@ $(function () {
 
     $("#appbundle_annonce_signes").keyup(function() {
 
-        if(!$(this).val().match(/^[^0-9]{10,}$/i))//Minimum 10 caractère, pas de caractères spéciaux.
+        if($(this).val().length < 10)//Minimum 10 caractère, pas de caractères spéciaux.
         {
             $(this).css('background-color', '#ff877b');
             $('#signes').show();
@@ -66,7 +66,7 @@ $(function () {
 
     $("#appbundle_annonce_circonstances").keyup(function() {
 
-        if(!$(this).val().match(/^[a-z0-9]{10}/i))//Minimum 10 caractère, pas de caractères spéciaux.
+        if($(this).val().length < 10)//Minimum 10 caractère, pas de caractères spéciaux.
         {
             $(this).css('background-color', '#ff877b');
             $('#circonstances').show();
@@ -77,9 +77,9 @@ $(function () {
             $(this).css('background-color', '#c9ffd2');
             $('#circonstances').hide();
             $('.circonstances ul li').hide();
-
         }
     });
+
 
     $("#appbundle_annonce_mobile").keyup(function() {
 

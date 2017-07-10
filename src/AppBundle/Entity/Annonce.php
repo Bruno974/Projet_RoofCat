@@ -128,6 +128,7 @@ class Annonce
     /**
      * @var string
      *
+     *
      * @ORM\Column(name="image_url", type="text")
      */
     private $imageUrl;

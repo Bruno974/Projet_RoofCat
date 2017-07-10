@@ -9,3 +9,7 @@ legend{font-size: 1.1em; font-weight: bold; color: #ff7A00;}
 img{margin-top: 30px;}
 
 .annonce{ margin-top: 20px;}
+
+@media(max-width:1200px){.center{ margin-left: 13%;}}
+
+@media(max-width:990px){.center{ margin-left: 0%;}}

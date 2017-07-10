@@ -3,7 +3,7 @@
         <h4 class="text-center "> {{ annonce.date|date('d-m-Y') }}</h4>
         <div class="col-lg-5">
             <p><small> {{ annonce.departement.departementNom }}</small></p>
-            <img src="{{ asset(annonce.imageUrl)}}" alt="{{annonce.description}}" class="img-responsive img-thumbnail">
+            <img src="{{ asset(annonce.imageUrl)}}" alt="{{annonce.description}}" class="img-responsive img-thumbnail center">
             <p class="text-center annonce"><strong>ANNONCE:</strong><small> {{ annonce.id }}</small></p>
         </div>
         <div class="col-lg-7 well">

@@ -1,6 +1,7 @@
-<div class="row">
-    <div class="map" id="map">
-        <section class="map__image col-lg-3 col-offset-lg-2 col-xs-0">
+<div class="container-fluid">
+    <div class="map row" id="map">
+
+        <section class="map__image col-lg-6 col-md-12 ">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:amcharts="http://amcharts.com/ammap" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 712 585">
                 <g>
                     <a id="region-01" xlink:title="Ain" xlink:href="{{ path('annonceTrouve', {'departement': 1}) }}">
@@ -294,9 +295,10 @@
                 </g>
             </svg>
         </section>
-        <section class="map__list col-lg-6 col-offset-lg-1 col-xs-12">
+
+        <section class="map__list col-lg-6 hidden-md hidden-sm hidden-xs">
             <ul>
-                <div class="col-xs-2 ecart">
+                <div class="col-xs-4 ecart">
                     <li><a href="{{ path('annonceTrouve', {'departement': 1}) }}" id="list-01">01-Ain</a></li>
                     <li><a href="{{ path('annonceTrouve', {'departement': 2}) }}" id="list-02">02-Aisne</a></li>
                     <li><a href="{{ path('annonceTrouve', {'departement': 3}) }}" id="list-03">03-Allier</a></li>
@@ -329,7 +331,7 @@
                     <li><a href="{{ path('annonceTrouve', {'departement': 30}) }}" id="list-29">29-Finistère</a></li>
                     <li><a href="{{ path('annonceTrouve', {'departement': 31}) }}" id="list-30">30-Gards</a></li>
                 </div>
-                <div class="col-xs-2 ecart">
+                <div class="col-xs-4 ecart">
                     <li><a href="{{ path('annonceTrouve', {'departement': 32}) }}" id="list-31">31-Haute-Garonne</a></li>
                     <li><a href="{{ path('annonceTrouve', {'departement': 33}) }}" id="list-32">32-Gers</a></li>
                     <li><a href="{{ path('annonceTrouve', {'departement': 34}) }}" id="list-33">33-Gironde</a></li>
@@ -363,7 +365,7 @@
                     <li><a href="{{ path('annonceTrouve', {'departement': 62}) }}" id="list-61">61-Orne</a></li>
                     <li><a href="{{ path('annonceTrouve', {'departement': 63}) }}" id="list-62">62-Pas-de-Calais</a></li>
                 </div>
-                <div class="col-xs-2 ecart">
+                <div class="col-xs-4 ecart">
                     <li><a href="{{ path('annonceTrouve', {'departement': 64}) }}" id="list-63">63-Puy-de-Dôme</a></li>
                     <li><a href="{{ path('annonceTrouve', {'departement': 65}) }}" id="list-64">64-Pyrénées-Atlantiques</a></li>
                     <li><a href="{{ path('annonceTrouve', {'departement': 66}) }}" id="list-65">65-Hautes-Pyrénées</a></li>
@@ -400,6 +402,7 @@
                 </div>
             </ul>
         </section>
+
     </div>
 </div>
 
