@@ -40,7 +40,7 @@ class PosterController extends Controller
 
             $decode = json_decode(file_get_contents($api_url), true);
 
-            if ($decode['success'] == true) {
+            if ($decode['success'] === true) {
                 $this->handleImage($annonce);
                 $em = $this->getDoctrine()->getManager();
                 $em->persist($annonce);

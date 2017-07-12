@@ -38,7 +38,7 @@ class ContactController extends Controller
 
             $decode = json_decode(file_get_contents($api_url), true);
 
-            if ($decode['success'] == true)
+            if ($decode['success'] === true)
             {
                 $this->get('mail')->sendContactMail($formulaireContact);
                 $request->getSession()->getFlashBag()->add('info', 'Votre mail a bien été envoyé.');
