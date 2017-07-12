@@ -79,4 +79,4 @@ swiftmailer:
 
 doctrine:
     dbal:
-        server_version: 5.7
+        server_version: 5.6
