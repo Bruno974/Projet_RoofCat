@@ -8,7 +8,7 @@ class AnnonceRepository extends \Doctrine\ORM\EntityRepository
 {
     public function findAnnoncesRecentes()
     {
-        return $query = $this->createQueryBuilder('a')
+        return $this->createQueryBuilder('a')
             ->orderBy('a.id', 'DESC')
             ->setMaxResults(2)
             ->setFirstResult(1)
@@ -18,7 +18,7 @@ class AnnonceRepository extends \Doctrine\ORM\EntityRepository
 
     public function findDerniereAnnonce()
     {
-        return $query = $this->createQueryBuilder('a')
+        return $this->createQueryBuilder('a')
             ->orderBy('a.id', 'DESC')
             ->setMaxResults(1)
             ->getQuery()
