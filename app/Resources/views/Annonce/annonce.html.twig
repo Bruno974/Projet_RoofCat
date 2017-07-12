@@ -8,11 +8,7 @@
 {% block body %}
     <div class="decalage"></div>
     {% for annonce in annonces %}
-        {% if annonce is defined %}
-            {% include ("Annonce/fiche_annonce.html.twig") %}
-        {% else %}
-            <p>pas d'annonce</p>
-        {% endif %}
+        {% include ("Annonce/fiche_annonce.html.twig") %}
     {% endfor %}
 
     {% if categorie == 1 %}

@@ -1,0 +1,60 @@
+<div class="table-responsive">
+    <table class="table table-hover table-condensed">
+        <thead>
+        <tr>
+            <th>Numéro</th>
+            <th>Date</th>
+            <th>Département</th>
+            <th>Tatouage</th>
+            <th>Identification</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        {% for annonce in annonces %}
+            {% if annonce.categorie.id == numCategorie %}
+                <tr>
+                    <td>{{ annonce.id }}</td>
+                    {% autoescape %}
+                        <td>{{ annonce.date|date('d/m/Y') }}</td>
+                    {% endautoescape %}
+                    <td>{{ annonce.departement.departementNom  }}</td>
+                    <td>
+                        {% if  annonce.tatouage  == null %}
+                            <span>Non</span>
+                        {% else %}
+                            <span>{{ annonce.tatouage }}</span>
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if  annonce.identification  == null %}
+                            <span>Non</span>
+                        {% else %}
+                            <span>{{ annonce.identification }}</span>
+                        {% endif %}
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-danger btn-xs" title="Supprimer" data-toggle="modal" data-target="#articleDialog{{ annonce.id }}"><span class="glyphicon glyphicon-remove"></span>
+                        </button>
+                        <div class="modal fade" id="articleDialog{{ annonce.id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title" id="myModalLabel">Confirmation</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        Voulez-vous vraiment effacer cette annonce ?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+                                        <a href="{{ path('supprimer_annonce', {'id': annonce.id}) }}" class="btn btn-danger">Confirmer</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            {% endif %}
+        {% endfor %}
+    </table>
+</div>
