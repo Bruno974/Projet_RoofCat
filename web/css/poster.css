@@ -38,6 +38,8 @@ strong{color: red; font-size: 1.3em;}
 
 small{ display: none; color: red;}
 
+#messDescription, #messTatouage, #messSignes, #messCirconstances, #messMail, #messMobile, #messIdentification { display: none; color: red;}
+
 
 
 

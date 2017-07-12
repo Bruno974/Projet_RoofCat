@@ -5,29 +5,29 @@ $(function () {
         if(!$(this).val().match(/^[^0-9]{10,}$/i))
         {
             $(this).css('background-color', '#ff877b');
-            $('#description').show();
-            $('.description ul li').show();
+            $('#messDescription').show();
+            $('.description ul li').hide();
         }
         else
         {
             $(this).css('background-color', '#c9ffd2');
-            $('#description').hide();
+            $('#messDescription').hide();
             $('.description ul li').hide();
         }
     });
 
     $("#appbundle_annonce_identification").keyup(function() {
 
-        if(!$(this).val().match(/^[0-9]{15,}$/i)) //Minimum 3 chiffres, pas de caractères spéciaux.
+        if(!$(this).val().match(/^[0-9]{15,}$/i))
         {
             $(this).css('background-color', '#ff877b');
-            $('#identification').show();
-            $('.identification ul li').show();
+            $('#messIdentification').show();
+            $('.identification ul li').hide();
         }
         else
         {
             $(this).css('background-color', '#c9ffd2');
-            $('#identification').hide();
+            $('#messIdentification').hide();
             $('.identification ul li').hide();
         }
     });
@@ -38,13 +38,13 @@ $(function () {
         if($(this).val().length < 10)//Minimum 10 caractère, pas de caractères spéciaux.
         {
             $(this).css('background-color', '#ff877b');
-            $('#signes').show();
-            $('.signes ul li').show();
+            $('#messSignes').show();
+            $('.signes ul li').hide();
         }
         else
         {
             $(this).css('background-color', '#c9ffd2');
-            $('#signes').hide();
+            $('#messSignes').hide();
             $('.signes ul li').hide();
         }
     });
@@ -54,13 +54,13 @@ $(function () {
         if($(this).val().length < 10)//Minimum 10 caractère, pas de caractères spéciaux.
         {
             $(this).css('background-color', '#ff877b');
-            $('#circonstances').show();
-            $('.circonstances ul li').show();
+            $('#messCirconstances').show();
+            $('.circonstances ul li').hide();
         }
         else
         {
             $(this).css('background-color', '#c9ffd2');
-            $('#circonstances').hide();
+            $('#messCirconstances').hide();
             $('.circonstances ul li').hide();
         }
     });
@@ -68,16 +68,16 @@ $(function () {
 
     $("#appbundle_annonce_mobile").keyup(function() {
 
-        if(!$(this).val().match(/^0[1-78][0-9]{8}$/))
+        if(!$(this).val().match(/^0[6-7][0-9]{8}$/))
         {
             $(this).css('background-color', '#ff877b');
-            $('#mobile').show();
-            $('.mobile ul li').show();
+            $('#messMobile').show();
+            $('.mobile ul li').hide();
         }
         else
         {
             $(this).css('background-color', '#c9ffd2');
-            $('#mobile').hide();
+            $('#messMobile').hide();
             $('.mobile ul li').hide();
         }
     });
@@ -87,14 +87,14 @@ $(function () {
         if(!$(this).val().match(/^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/))
         {
             $(this).css('background-color', '#ff877b');
-            $('#email').show();
-            $('.email ul li').show();
+            $('#messMail').show();
+            $('.email ul li').hide();
         }
         else
         {
             $(this).css('background-color', '#c9ffd2');
+            $('#messMail').hide();
             $('.email ul li').hide();
-            $('#email').hide();
         }
     });
 
@@ -112,13 +112,13 @@ $(function () {
         if(!$(this).val().match(/[0-9]{3}[a-zA-Z]{3}|[a-zA-Z]{3}[0-9]{3}/))
         {
             $(this).css('background-color', '#ff877b');
-            $('#tatouage').show();
-            $('.tatouage ul li').show();
+            $('#messTatouage').show();
+            $('.tatouage ul li').hide();
         }
         else
         {
             $(this).css('background-color', '#c9ffd2');
-            $('#tatouage').hide();
+            $('#messTatouage').hide();
             $('.tatouage ul li').hide();
         }
     });

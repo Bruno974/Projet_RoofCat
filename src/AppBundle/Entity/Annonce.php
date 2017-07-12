@@ -32,7 +32,7 @@ class Annonce
     /**
      * @var string
      *
-     * @Assert\Length(min=3, minMessage="Minimun 10 caractères")
+     * @Assert\Length(min=10, minMessage="Au moins 10 caractères et pas de chiffres.")
      * @Assert\Regex(
      *     pattern="/\d/",
      *     match=false,
@@ -53,7 +53,7 @@ class Annonce
      * @var string
      *
      * @ORM\Column(name="tatouage", type="string", length=60)
-     * @Assert\Length(min=3, minMessage=" format: 129ZEP ou ZEP129")
+     * @Assert\Length(min=6, minMessage="Format 129ZEP ou ZEP129")
      */
     private $tatouage;
 
@@ -79,6 +79,11 @@ class Annonce
      * @var string
      *
      * @ORM\Column(name="identification", type="string", length=50)
+     *
+     * @Assert\Regex(
+     *     pattern="/^[0-9]{15,}$/",
+     *     match=true,
+     *     message="15 chiffres - Pas de lettres - Pas de caractères spéciaux.")
      */
     private $identification;
 

@@ -27,7 +27,7 @@
                     <label for="nom">Description:<strong>*</strong></label>
                     {{ form_widget(form.description, {'attr': {'class': 'form-control', 'placeholder': 'Minimum 10 caractères'}})}}
                     {{ form_errors(form.description) }}
-                    <small id="description">Minimun 10 caractères et pas de chiffres.</small>
+                    <p id="messDescription">Au moins 10 caractères et pas de chiffres.</p>
                 </div>
                 <div class="form-group">
                     <label for="picture">Image</label>
@@ -48,13 +48,13 @@
                     <label for="nom">Tatouage:</label>
                     {{ form_widget(form.tatouage, {'attr': {'class': 'form-control', 'placeholder': '129ZEP', 'maxlength':'6'}})}}
                     {{ form_errors(form.tatouage) }}
-                    <small id="tatouage">format: 129ZEP ou ZEP129</small>
+                    <p id="messTatouage">Format 129ZEP ou ZEP129</p>
                 </div>
                 <div class="form-group identification">
                     <label for="nom">Identification:</label>
                     {{ form_widget(form.identification, {'attr': {'class': 'form-control', 'placeholder': '250269811205512',  'maxlength':'15'}})}}
                     {{ form_errors(form.identification) }}
-                    <small id="identification">Minimun 15 chiffres - Pas de lettres - pas de caractères spéciaux.</small>
+                    <p id="messIdentification">15 chiffres - Pas de lettres - Pas de caractères spéciaux.</p>
                 </div>
 
                 <div class="form-group">
@@ -69,13 +69,13 @@
                     <label for="nom">Signes:<strong>*</strong></label>
                     {{ form_widget(form.signes, {'attr': {'class': 'form-control', 'placeholder': 'Minimum 10 caractères', 'cols': '30', 'rows':'10'}})}}
                     {{ form_errors(form.signes) }}
-                    <small id="signes">Minimun 10 caractères.</small>
+                    <p id="messSignes">Les signes doivent faire au moins 10 caractères.</p>
                 </div>
                 <div class="form-group circonstances">
                     <label for="nom">Circonstances:<strong>*</strong></label>
                     {{ form_widget(form.circonstances, {'attr': {'class': 'form-control', 'placeholder': 'Minimum 10 caractères', 'cols': '30', 'rows':'10'}})}}
                     {{ form_errors(form.circonstances) }}
-                    <small id="circonstances">Minimun 10 caractères.</small>
+                    <p id="messCirconstances">Les circonstances doivent faire au moins 10 caractères.</p>
                 </div>
             </article>
             <article class="col-md-3 col-md-offset-1 well">
@@ -84,13 +84,13 @@
                     <label for="nom">Email:<strong>*</strong></label>
                     {{ form_widget(form.mail, {'attr': {'class': 'form-control', 'placeholder': 'Email', 'cols': '30', 'rows':'10'}})}}
                     {{ form_errors(form.mail) }}
-                    <small id="email">Email non valide.</small>
+                    <p id="messMail">Email n'est valide.</p>
                 </div>
                 <div class="form-group mobile">
                     <label for="nom">Mobile:<strong>*</strong></label>
                     {{ form_widget(form.mobile, {'attr': {'class': 'form-control', 'placeholder': 'Mobile', 'maxlength':'10'}})}}
                     {{ form_errors(form.mobile) }}
-                    <small id="mobile">10 chiffres - Débute par 06 ou 07</small>
+                    <p id="messMobile">10 chiffres - Débute par 06 ou 07</p>
                 </div>
                 <div class="form-group">
                     <label for="nom">Département:</label>

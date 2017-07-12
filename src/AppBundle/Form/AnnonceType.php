@@ -34,7 +34,7 @@ class AnnonceType extends AbstractType
             ->add('tatouage', TextType::class, array( 'required' => false))
             ->add('signes', TextareaType::class)
             ->add('circonstances', TextareaType::class)
-            ->add('identification', TextType::class, array( 'required' => false, 'invalid_message' => 'Minimun 15 chiffres - Pas de lettres - pas de caractères spéciaux.'))
+            ->add('identification', TextType::class, array( 'required' => false,)) //'invalid_message' => 'Minimun 15 chiffres - Pas de lettres - pas de caractères spéciaux.'))
             ->add('sterilisation',  ChoiceType::class, array(
                 'choices'  => array(
                     'Oui' => 'oui',
