@@ -75,3 +75,8 @@ swiftmailer:
 #       class: Twig_Extensions_Extension_Text
  #      tags:
   #         - { name: twig.extension }
+
+
+doctrine:
+    dbal:
+        server_version: 5.7
