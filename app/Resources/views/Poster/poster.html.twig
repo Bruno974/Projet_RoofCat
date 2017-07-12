@@ -41,25 +41,25 @@
                 </div>
                 <div class="form-group">
                     <label for="nom">Race:</label>
-                    {{ form_widget(form.race, {'attr': {'class': 'form-control', 'placeholder': 'Race', 'cols': '30', 'rows':'10'}})}}
+                    {{ form_widget(form.race, {'attr': {'class': 'form-control', 'placeholder': 'Race'}})}}
                     {{ form_errors(form.race) }}
                 </div>
                 <div class="form-group tatouage">
                     <label for="nom">Tatouage:</label>
-                    {{ form_widget(form.tatouage, {'attr': {'class': 'form-control', 'placeholder': '129ZEP'}})}}
+                    {{ form_widget(form.tatouage, {'attr': {'class': 'form-control', 'placeholder': '129ZEP', 'maxlength':'6'}})}}
                     {{ form_errors(form.tatouage) }}
                     <small id="tatouage">format: 129ZEP ou ZEP129</small>
                 </div>
                 <div class="form-group identification">
                     <label for="nom">Identification:</label>
-                    {{ form_widget(form.identification, {'attr': {'class': 'form-control', 'placeholder': '250269811205512', 'cols': '30', 'rows':'10'}})}}
+                    {{ form_widget(form.identification, {'attr': {'class': 'form-control', 'placeholder': '250269811205512',  'maxlength':'15'}})}}
                     {{ form_errors(form.identification) }}
                     <small id="identification">Minimun 15 chiffres - Pas de lettres - pas de caractères spéciaux.</small>
                 </div>
 
                 <div class="form-group">
                     <label for="nom">Stérilisation:</label>
-                    {{ form_widget(form.sterilisation, {'attr': {'class': 'form-control', 'placeholder': 'Stérilisation', 'cols': '30', 'rows':'10'}})}}
+                    {{ form_widget(form.sterilisation, {'attr': {'class': 'form-control', 'placeholder': 'Stérilisation'}})}}
                     {{ form_errors(form.sterilisation) }}
                 </div>
             </article>
@@ -88,19 +88,19 @@
                 </div>
                 <div class="form-group mobile">
                     <label for="nom">Mobile:<strong>*</strong></label>
-                    {{ form_widget(form.mobile, {'attr': {'class': 'form-control', 'placeholder': 'Mobile', 'cols': '30', 'rows':'10'}})}}
+                    {{ form_widget(form.mobile, {'attr': {'class': 'form-control', 'placeholder': 'Mobile', 'maxlength':'10'}})}}
                     {{ form_errors(form.mobile) }}
                     <small id="mobile">10 chiffres - Débute par 06 ou 07</small>
                 </div>
                 <div class="form-group">
                     <label for="nom">Département:</label>
-                    {{ form_widget(form.departement, {'attr': {'class': 'form-control', 'placeholder': 'Département', 'cols': '30', 'rows':'10'}})}}
+                    {{ form_widget(form.departement, {'attr': {'class': 'form-control', 'placeholder': 'Département'}})}}
                     {{ form_errors(form.departement) }}
                 </div>
 
                 <div class="form-group">
                     <label for="nom">Categorie:</label>
-                    {{ form_widget(form.categorie, {'attr': {'class': 'form-control', 'placeholder': 'Catégorie', 'cols': '30', 'rows':'10'}})}}
+                    {{ form_widget(form.categorie, {'attr': {'class': 'form-control', 'placeholder': 'Catégorie'}})}}
                     {{ form_errors(form.categorie) }}
                 </div>
                 <div class="g-recaptcha" data-sitekey="6LeGqiUTAAAAAFZwqmDPRoHCAgsy8OPyG47BCi5A"></div>

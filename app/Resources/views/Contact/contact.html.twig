@@ -28,35 +28,41 @@
                     <legend>Envoyez-nous un message</legend>
 
                     <div class="well" >
-                        <div class="form-group">
-                            <label for="nom">Nom:</label>
+                        <div class="form-group nom">
+                            <label for="nom">Nom:<strong>*</strong></label>
                             {{ form_widget(form.lastName, {'attr': {'class': 'form-control', 'placeholder': 'Nom'}})}}
                             {{ form_errors(form.lastName) }}
+                            <p id="messNom">Le nom doit faire au moins 3 caractères.</p>
                         </div>
 
-                        <div class="form-group">
-                            <label for="nom">Prénom:</label>
+                        <div class="form-group prenom">
+                            <label for="prenom">Prénom:<strong>*</strong></label>
                             {{ form_widget(form.firstName, {'attr': {'class': 'form-control', 'placeholder': 'Prénom'}})}}
                             {{ form_errors(form.firstName) }}
+                            <p id="messPrenom">Le prénom doit faire au moins 3 caractères.</p>
                         </div>
 
-                        <div class="form-group">
-                            <label for="nom">Email:</label>
+                        <div class="form-group mail">
+                            <label for="mail">Email:<strong>*</strong></label>
                             {{ form_widget(form.mail, {'attr': {'class': 'form-control', 'placeholder': 'Email'}})}}
                             {{ form_errors(form.mail) }}
+                            <p id="messMail">Le mail est invalide.</p>
                         </div>
 
-                        <div class="form-group">
-                            <label for="nom">Numéro de l'annonce:</label>
+                        <div class="form-group num">
+                            <label for="num">Numéro de l'annonce:</label>
                             {{ form_widget(form.numero, {'attr': {'class': 'form-control', 'placeholder': 'Numero'}})}}
                             {{ form_errors(form.numero) }}
+                            <p id="messNum">Minimum 1 chiffre et seulement des chiffres.</p>
                         </div>
 
-                        <div class="form-group">
-                            <label for="nom">Votre message:</label>
+                        <div class="form-group message">
+                            <label for="message">Votre message:<strong>*</strong></label>
                             {{ form_widget(form.message, {'attr': {'class': 'form-control', 'placeholder': 'Message', 'cols': '30', 'rows':'10'}})}}
                             {{ form_errors(form.message) }}
+                            <p id="messMessage">Le message doit faire au moins 15 caractères.</p>
                         </div>
+                        <div id="requis" class="pull-right"><p><strong>*</strong> Champs requis.</p></div>
                         <div class="g-recaptcha" data-sitekey="6LeGqiUTAAAAAFZwqmDPRoHCAgsy8OPyG47BCi5A"></div>
                         {{ form_widget(form.Envoyer, {'attr': {'class': 'btn btn-warning pull-right'}})}}
                     </div>
@@ -66,3 +72,8 @@
         </div>
     </div>
 {% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('js/contact.js') }}"></script>
+{% endblock %}
+

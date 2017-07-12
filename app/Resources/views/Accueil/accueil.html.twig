@@ -53,7 +53,7 @@
                                     <p><small>Aucune <br> Aucune </small></p>
                                 {% else %}
                                     <h4>{{ annonceDerniere.categorie.nom }}</h4><h6>{{ annonceDerniere.departement.departementNom }}</h6>
-                                    <p><small>{{ annonceDerniere.description }} <br> {{ annonceDerniere.signes }}</small></p>
+                                    <p><small>{{ annonceDerniere.description }} <br> {{ annonceDerniere.signes | truncate(40) }}</small></p>
                                     {% if annonceDerniere.categorie.id == 2 %}
                                         <a href="{{ path('annoncePerdu', {'departement': annonceDerniere.departement.id }) }}" class="button-2">Plus d'infos</a>
                                     {% else %}
@@ -71,7 +71,7 @@
                             <article class="annonces">
                                 <div class="overlay">
                                     <h4>{{ annonce.categorie.nom }}</h4><h6>{{ annonce.departement.departementNom }}</h6>
-                                    <p><small>{{ annonce.description }} <br> {{ annonce.signes }}</small></p>
+                                    <p><small>{{ annonce.description }} <br> {{ annonce.signes | truncate(40) }}</small></p>
                                     {% if annonce.categorie.id == 2 %}
                                         <a href="{{ path('annoncePerdu', {'departement': annonce.departement.id }) }}" class="button-2">Plus d'infos</a>
                                     {% else %}

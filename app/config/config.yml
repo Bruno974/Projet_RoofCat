@@ -67,4 +67,11 @@ swiftmailer:
     host: '%mailer_host%'
     username: '%mailer_user%'
     password: '%mailer_password%'
-    spool: { type: memory }
+    #spool: { type: memory }
+
+
+#services:
+#    twig.extension.text:
+#       class: Twig_Extensions_Extension_Text
+ #      tags:
+  #         - { name: twig.extension }

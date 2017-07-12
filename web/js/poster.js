@@ -32,21 +32,6 @@ $(function () {
         }
     });
 
-    $("#appbundle_annonce_tatouage").keyup(function() {
-
-        if(!$(this).val().match(/^[a-z0-9]{5,}$/i)) //Minimum 3 chiffres, pas de caractères spéciaux.
-        {
-            $(this).css('background-color', '#ff877b');
-            $('#tatouage').show();
-            $('.tatouage ul li').show();
-        }
-        else
-        {
-            $(this).css('background-color', '#c9ffd2');
-            $('#tatouage').hide();
-            $('.tatouage ul li').hide();
-        }
-    });
 
     $("#appbundle_annonce_signes").keyup(function() {
 
@@ -120,5 +105,22 @@ $(function () {
     $('.email ul li').css('color', 'red');
     $('.identification ul li').css('color', 'red');
     $('.tatouage ul li').css('color', 'red');
+
+
+    $("#appbundle_annonce_tatouage").keyup(function() {
+
+        if(!$(this).val().match(/[0-9]{3}[a-zA-Z]{3}|[a-zA-Z]{3}[0-9]{3}/))
+        {
+            $(this).css('background-color', '#ff877b');
+            $('#tatouage').show();
+            $('.tatouage ul li').show();
+        }
+        else
+        {
+            $(this).css('background-color', '#c9ffd2');
+            $('#tatouage').hide();
+            $('.tatouage ul li').hide();
+        }
+    });
 
 });

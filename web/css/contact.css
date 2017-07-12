@@ -14,7 +14,7 @@ legend{ color: orange; text-shadow: black 0.05em 0.05em; font-weight: bold;  }
     .container{ margin-top: 50px; }
 }
 
-@media(max-width:400px) {
+@media(max-width:500px) {
     #rc-imageselect, .g-recaptcha {
         transform: scale(0.65);
         transform-origin: 0;
@@ -26,3 +26,9 @@ legend{ color: orange; text-shadow: black 0.05em 0.05em; font-weight: bold;  }
         transform-origin: 0 0;
     }
 }
+
+strong{ color: red; font-size: 1.2em;}
+
+#messNom, #messPrenom, #messNum, #messMessage, #messMail{ display: none; color: red;}
+
+#requis p{color: black}

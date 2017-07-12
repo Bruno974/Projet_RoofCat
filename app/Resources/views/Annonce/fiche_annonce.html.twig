@@ -1,6 +1,6 @@
 <div class="container">
     <div class=" row well">
-        <h4 class="text-center "> {{ annonce.date|date('d-m-Y') }}</h4>
+        <h4 class="text-center "> {{ annonce.date|date('d/m/Y') }}</h4>
         <div class="col-lg-5">
             <p><small> {{ annonce.departement.departementNom }}</small></p>
             <img src="{{ asset(annonce.imageUrl)}}" alt="{{annonce.description}}" class="img-responsive img-thumbnail center">

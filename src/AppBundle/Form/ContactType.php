@@ -21,8 +21,8 @@ class ContactType extends AbstractType
         $builder
             ->add('lastName', TextType::class)
             ->add('firstName', TextType::class)
-            ->add('mail', EmailType::class)
-            ->add('numero', NumberType::class)
+            ->add('mail', EmailType::class, array('invalid_message' => 'Email non valide'))
+            ->add('numero', NumberType::class, array( 'required' => false,'invalid_message' => 'Minimum 1 chiffre et seulement des chiffres.'))
             ->add('message', TextareaType::class)
             ->add('Envoyer', SubmitType::class);
     }

@@ -30,12 +30,12 @@ class ContactModel
     public $mail;
 
     /**
-     * @Assert\Length(min=25, minMessage="Le message doit faire au moins {{ limit }} caractères.")
+     * @Assert\Length(min=15, minMessage="Le message doit faire au moins {{ limit }} caractères.")
      */
     public $message;
 
     /**
-     * @Assert\Length(min=1, minMessage="Le numéro doit faire au moins {{ limit }} caractères.")
+     * @Assert\Length(min=1, minMessage="Le numéro doit contenir au moins {{ limit }} chiffres.")
      */
     public $numero;
 }
