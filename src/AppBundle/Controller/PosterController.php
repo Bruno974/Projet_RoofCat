@@ -13,7 +13,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use AppBundle\Entity\Annonce;
 use Symfony\Component\HttpFoundation\Request;
-use AppBundle\Form\AnnonceType;
+use AppBundle\Form\Type\AnnonceType;
 
 class PosterController extends Controller
 {

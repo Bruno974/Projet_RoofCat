@@ -13,7 +13,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Request;
 use AppBundle\Model\ContactModel;
-use AppBundle\Form\ContactType;
+use AppBundle\Form\Type\ContactType;
 
 class ContactController extends Controller
 {
