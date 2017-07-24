@@ -2,4 +2,6 @@
 
 Projet 06 de la formation openclassrooms Chef de projet multimédia - Développemnt
 
-Contribuez à votre écosystème
+Contribuez à votre écosystème.
+
+
