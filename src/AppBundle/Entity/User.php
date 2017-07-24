@@ -43,6 +43,7 @@ class User implements UserInterface
      * @var string
      * @Assert\Length(min=5, minMessage="Le mot de passe doit faire au moins {{ limit }} caractères.")
      * @ORM\Column(name="password", type="string", length=255)
+     * @Assert\NotBlank()
      */
     private $password;
 
